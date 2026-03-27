@@ -14,7 +14,7 @@ powerProduction: 3.5
     items:[
       copper/1
     ]
-    liquids: {
+    liquid: {
       liquid: water
       amount: 0.1
       optional: false
