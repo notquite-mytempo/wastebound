@@ -14,14 +14,12 @@ powerProduction: 3.5
     items:[
       copper/1
     ]
-    liquid: {
-      liquid: water
-      amount: 0.1
-      optional: false
-    }
+    liquid: water/0.1
   }
   itemDuration: 240
-
+hasItems: true
+hasLiquids: true
+hasPower: true
 heating: 0.05
 heatWarmupRate: 1
 heatOutput: 10
