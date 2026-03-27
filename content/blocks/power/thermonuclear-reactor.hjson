@@ -22,11 +22,11 @@ powerProduction: 35
   }
   
 
-  overheatScale: 15
-  unstableSpeed: 0.00111111111
+
+  unstableSpeed: 0.05
 maxHeat: 30
 
-  explosionRadius: 6
+  explosionRadius: 50
   explosionDamage: 1500
   
 
