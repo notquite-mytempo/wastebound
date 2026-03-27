@@ -8,11 +8,11 @@
   copper/67
 ]
 liquidCapacity: 60
-powerProduction: 35
+powerProduction: 3.5
 
   consumes:{
     items:[
-      copper
+      copper/1
     ]
     liquid: {
       liquid: water
