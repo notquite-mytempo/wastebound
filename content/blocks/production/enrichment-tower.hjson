@@ -1,0 +1,23 @@
+type: GenericCrafter
+name: Enrichment Tower
+description: Refines and enriches large amounts of Yellowcake into Uranium-235 with Depleted Uranium as a byproduct. Requires power.
+size: 4
+squareSprite: false
+consumes: {
+  power: 3
+  items: [
+    yellowcake/6
+  ]
+}
+craftTime: 180
+craftEffect: blastExplosion
+outputItems: [ 
+  uranium-235/1
+  depleted-uranium/4
+  ]
+category: crafting
+requirements: [
+  copper/67
+  lead/67
+  titanium/67
+]
