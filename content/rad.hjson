@@ -1,0 +1,57 @@
+
+// ship 
+type: naval
+// change to your unit's name 
+name: Rad
+speed: 1.1
+drag: 0.13
+// hitSize 8 is one tile iirc, not sure
+hitSize: 10
+health: 800
+accel: 0.4
+rotateSpeed: 3.3
+// faceTarget means it turns the whole unit towards anything it attacks. Ships usually don't do that and only their weapons turn towards enemies
+faceTarget: false
+armor: 2
+
+// mine tier determines what maximum hardness ores it can mine 
+mineTier: 1
+mineWalls: true
+mineFloor: true
+mineSpeed: 8
+itemCapacity: 40
+buildSpeed: 3
+rotateSpeed: 4
+coreUnitDock: true
+
+weapons: [
+  {
+// change the weapon name to (your unit's name)-weapon 
+    name: rad-pew
+    mirror: false
+    x: 0
+    y: 5
+// reload is cool down between shots in ticks. One second is 60 ticks 
+    reload: 15
+// the inaccuracy is offset by homing just to look cool
+    inaccuracy: 10
+    shootSound: shoot
+    ammoUseEffect: casing3
+        minWarmup : 0.05
+    bullet: {
+      lifetime: 40
+      speed: 4
+      type: BasicBulletType
+      width: 8
+      length: 9
+      damage: 20
+      pierceDamageFactor: 0
+// this makes it home in slightly after ¼ of a second  
+      homingDelay: 15
+      homingPower: 0.3
+    }
+  }
+]
+
+// because it's the core unit
+alwaysUnlocked: true
