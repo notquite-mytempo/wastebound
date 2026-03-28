@@ -4,13 +4,14 @@ type: naval
 // change to your unit's name 
 name: Rad
 outlineColor: 0f1718
-speed: 1.1
+speed: 1
 drag: 0.13
 // hitSize 8 is one tile iirc, not sure
 hitSize: 10
 health: 300
 accel: 0.4
 rotateSpeed: 3.3
+rotateToBuilding: false
 // faceTarget means it turns the whole unit towards anything it attacks. Ships usually don't do that and only their weapons turn towards enemies
 faceTarget: false
 armor: 2
