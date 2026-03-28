@@ -30,6 +30,7 @@ weapons: [
 // change the weapon name to (your unit's name)-weapon 
     name: rad-pew
     mirror: false
+    rotate: true
     x: 0
     y: 0
 // reload is cool down between shots in ticks. One second is 60 ticks 
