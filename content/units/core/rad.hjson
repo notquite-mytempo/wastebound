@@ -3,6 +3,7 @@
 type: naval
 // change to your unit's name 
 name: Rad
+outlineColor: 0f1718
 speed: 1.1
 drag: 0.13
 // hitSize 8 is one tile iirc, not sure
