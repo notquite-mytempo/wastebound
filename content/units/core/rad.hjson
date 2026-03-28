@@ -46,20 +46,20 @@ weapons: [
 }
     bullet: {
       lifetime: 40
-      speed: 4
+      speed: 3
       type: BasicBulletType
       width: 8
       height: 9
-      damage: 20
+      damage: 15
       splashDamage: 10
       splashDamageRadius: 16
       pierceDamageFactor: 0
 // this makes it home in slightly after ¼ of a second  
       homingDelay: 15
       homingPower: 0.3
-      backColor: 71b28a
-      frontColor: 2b6651
-      trailColor: cffed8
+      backColor: 265739
+      frontColor: cffed8
+      trailColor: 265739
       hitEffect: flakExplosion
       despawnEffect: blockExplosionSmoke
     }
