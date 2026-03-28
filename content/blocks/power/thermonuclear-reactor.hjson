@@ -25,8 +25,24 @@ hasPower: true
 heating: 0.05
 heatWarmupRate: 1
 heatOutput: 10
-maxHeat: 30
-
+maxHeat: 150
+drawer: {
+  type: DrawMulti
+  drawers: [
+    {
+      type: DrawRegion
+      suffix: -bottom
+    }
+    {
+      type: DrawLiquidTile
+      drawLiquid: water
+      padding: 3
+    }
+    {
+      type: DrawDefault
+    }
+  ]
+}
   explosionRadius: 50
   explosionDamage: 6000
   
