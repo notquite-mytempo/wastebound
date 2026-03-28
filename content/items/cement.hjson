@@ -1,0 +1,7 @@
+name: Cement
+description: A peculiar material that when mixed with water and left to dry, hardens. Can be used as a building material and as decent protection from radiation coming from reactors.
+hardness: 1.5
+buildable: true
+explosiveness: 0
+radioactivity: 0
+color: 7f8587
