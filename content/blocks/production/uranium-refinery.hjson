@@ -4,7 +4,7 @@ description: Grinds Pitchblende into a fine powder before refining it with Sand 
 size: 2
 scaledHealth: 60
 squareSprite: false
-craftEffect: smeltsmoke
+craftEffect: turbinegenerate
 outputItems: [
   yellowcake/1
 ]
