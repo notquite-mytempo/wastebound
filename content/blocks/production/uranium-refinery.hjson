@@ -1,0 +1,24 @@
+type: GenericCrafter
+name: Uranium Refinery
+description: Grinds Pitchblende into a fine powder before refining it with Sand to create Yellowcake.
+size: 2
+scaledHealth: 60
+squareSprite: false
+craftEffect: smeltsmoke
+outputItems: [
+  yellowcake/1
+]
+consumes: {
+  items: [
+    sand/1
+    pitchblende/2
+  ]
+}
+craftTime: 75
+category: crafting
+requirements: [
+  copper/67
+  lead/67
+]
+ambientSound: grinding
+ambientSoundVolume: 0.08
