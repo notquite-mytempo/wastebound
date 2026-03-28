@@ -1,0 +1,7 @@
+name: Yellowcake
+description: A refined material that looks like a sponge cake that can be processed into Uranium.
+hardness: 1
+buildable: false
+explosiveness: 0
+radioactivity: 0.8
+color: ffce7e
