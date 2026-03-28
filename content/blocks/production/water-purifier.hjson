@@ -1,0 +1,33 @@
+type: GenericCrafter
+name: Water Purifier
+description: Cleans up Toxic water, purifying it from any toxic waste or radioactive residues left behind.
+size: 2
+squareSprite: false
+category: crafting
+requirements: [
+  copper/6767
+]
+drawer: {
+  type: DrawMulti
+  drawers: [
+    {
+      type: DrawRegion
+      suffix: -bottom
+    }
+    {
+      type: DrawLiquidTile
+      drawLiquid: toxic-water
+      padding: 3
+    }
+    {
+      type: DrawDefault
+    }
+  ]
+}
+consumes: {
+  liquid: toxic-water
+  amount: 0.16
+}
+craftTime: 60
+craftEffect: smeltsmoke
+outputLiquid: water/0.16
