@@ -1,7 +1,7 @@
 name: Pitchblende
 description: A raw mineral extracted from rocks on the irradiated surface of Vastis, must be processed to Uranium-235 before being used to produce electricity.
-hardness: 1
+hardness: 1.2
 buildable: false
 explosiveness: 0
 radioactivity: 0.5
-color: dbd784
+color: 494a3f
