@@ -8,7 +8,7 @@ speed: 1.1
 drag: 0.13
 // hitSize 8 is one tile iirc, not sure
 hitSize: 10
-health: 800
+health: 300
 accel: 0.4
 rotateSpeed: 3.3
 // faceTarget means it turns the whole unit towards anything it attacks. Ships usually don't do that and only their weapons turn towards enemies
@@ -50,7 +50,7 @@ weapons: [
       type: BasicBulletType
       width: 8
       height: 9
-      damage: 15
+      damage: 3
       splashDamage: 10
       splashDamageRadius: 16
       pierceDamageFactor: 0
@@ -60,8 +60,8 @@ weapons: [
       backColor: 265739
       frontColor: cffed8
       trailColor: 265739
-      trailLength: 15
-      trailWidth: 8
+      trailLength: 8
+      trailWidth: 1.5
       hitEffect: flakExplosion
       despawnEffect: blockExplosionSmoke
     }
