@@ -34,12 +34,16 @@ weapons: [
     x: 0
     y: 0
 // reload is cool down between shots in ticks. One second is 60 ticks 
-    reload: 15
+    reload: 30
 // the inaccuracy is offset by homing just to look cool
     inaccuracy: 10
     shootSound: shoot
     ammoUseEffect: casing3
         minWarmup : 0.05
+    shoot:{
+  shots:2
+    shotDelay:8
+}
     bullet: {
       lifetime: 40
       speed: 4
@@ -53,6 +57,9 @@ weapons: [
 // this makes it home in slightly after ¼ of a second  
       homingDelay: 15
       homingPower: 0.3
+      backColor: 71b28a
+      frontColor: 2b6651
+      trailColor: cffed8
     }
   }
 ]
