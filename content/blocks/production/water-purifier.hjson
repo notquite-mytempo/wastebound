@@ -25,9 +25,8 @@ drawer: {
   ]
 }
 consumes: {
-  liquid: toxic-water
-  amount: 0.16
+  liquid: toxic-water/1
 }
 craftTime: 60
 craftEffect: smeltsmoke
-outputLiquid: water/0.16
+outputLiquid: water/1
