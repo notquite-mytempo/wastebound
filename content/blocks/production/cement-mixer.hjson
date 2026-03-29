@@ -32,7 +32,7 @@ drawer: [
       type: DrawBlurSpin
       suffix: -rotator
         spinSprite: true
-      rotateSpeed: 24
+      rotateSpeed: 8
         }
    {
       type: DrawRegion
