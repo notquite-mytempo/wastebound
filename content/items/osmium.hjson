@@ -1,0 +1,7 @@
+name: Osmium
+description: The densest naturally occurring material. Brittle but can be used for construction.
+hardness: 2.5
+buildable: true
+explosiveness: 0
+radioactivity: 0
+color: e7fdfd
