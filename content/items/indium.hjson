@@ -1,0 +1,5 @@
+name: Indium
+description: A very soft and malleable metal thats flexible even at subzero temperatures, useful for building basic structures
+hardness: 0.4
+buildable: false
+color: 122839
