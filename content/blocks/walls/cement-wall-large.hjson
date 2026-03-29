@@ -1,0 +1,11 @@
+type: Wall
+name: Large Cement Wall
+description: A large wall made from Cement. Protects allied structures from damage.
+size: 2
+health: 1240
+category: defense
+squareSprite: false
+requirements: [
+  cement/32
+] 
+researchCostMultiplier: 0.05
