@@ -1,0 +1,11 @@
+type: Wall
+name: Cement Wall
+description: A wall made from Cement. Protects allied structures from damage.
+size: 1
+health: 310
+category: defense
+squareSprite: false
+requirements: [
+  cement/8
+] 
+researchCostMultiplier: 0.05
