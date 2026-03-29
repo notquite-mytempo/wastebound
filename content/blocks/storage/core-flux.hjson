@@ -1,0 +1,15 @@
+type: CoreBlock
+name: Core: Flux
+description: Core of the base. Armored and stores a medium amount of items.
+requirements: [
+  copper/1
+]
+isFirstTier: true
+size: 3
+squareSprite: false
+alwaysUnlocked: true
+unitType: rad
+health: 1650
+itemCapacity: 4500
+unitCapModifier: 8
+category: effect
