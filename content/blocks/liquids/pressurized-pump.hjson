@@ -1,0 +1,13 @@
+type: Pump
+name: Pressurized Pump
+description: Pumps liquid from liquid tiles using diffferences in atmospheric pressure.
+size: 2
+category: liquid
+squareSprite: false
+research: core-flux
+requirements: [
+  indium/24
+  cement/12
+]
+pumpAmount: 0.2
+researchCostMultiplier: 0.5
