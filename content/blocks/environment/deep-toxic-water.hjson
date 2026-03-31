@@ -1,0 +1,13 @@
+type: Floor
+name: Deep Toxic Water
+speedMultiplier: 0.5
+variants: 3
+status: wet
+statusDuration: 30
+drownTime: 360
+liquidDrop: toxic-water
+liquidMultiplier: 2
+isLiquid: true
+cacheLayer: water
+albedo: 0.9
+supportsOverlay: true
