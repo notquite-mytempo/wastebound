@@ -163,5 +163,7 @@ defaultCore: core-flux
 parent: sun
 solarSystem: sun
 launchCandidates: []
+
+allowSelfSectorLaunch: true
 //itemWhitelist: [
 //]
