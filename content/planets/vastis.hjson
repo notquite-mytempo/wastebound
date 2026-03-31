@@ -94,7 +94,7 @@ cloudMesh: [
    type: HexSkyMesh
    planet: vastis
    speed: 1.21
-   radius: 0.1
+   radius: 0.3
    divisions: 4
    coarseness: 0.42
    color: 8dd8918c
@@ -107,7 +107,7 @@ cloudMesh: [
    type: HexSkyMesh
    planet: vastis
    speed: 1.01
-   radius: 0.11
+   radius: 0.31
    divisions: 4
    coarseness: 0.42
    color: 8dd8918c
@@ -120,7 +120,7 @@ cloudMesh: [
    type: HexSkyMesh
    planet: vastis
    speed: 0.891
-   radius: 0.091
+   radius: 0.39
    divisions: 4
    coarseness: 0.42
    color: 8dd8918c
