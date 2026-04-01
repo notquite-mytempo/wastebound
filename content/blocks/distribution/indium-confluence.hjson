@@ -3,7 +3,7 @@ name: Indium Confluence
 description: Allows for crossing two ducts. 
 health: 65
 size: 1
-speed: 144
+speed: 2
 requirements: [
   indium/4
 ]
