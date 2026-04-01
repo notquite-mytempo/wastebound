@@ -1,0 +1,13 @@
+type: Duct
+name: Indium Duct
+description: Transports items utilizing a mix of gravity and pressure.
+category: distribution
+alwaysUnlocked: true
+research: core-flux
+speed: 10
+health: 45
+//bridgeReplacement: indium-bridge
+requirements: [
+  indium/1
+]
+//junctionReplacement: indium-confluence
