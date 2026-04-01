@@ -6,7 +6,7 @@ alwaysUnlocked: true
 research: core-flux
 speed: 18
 health: 45
-//bridgeReplacement: indium-bridge
+bridgeReplacement: indium-bridge
 requirements: [
   indium/1
 ]
