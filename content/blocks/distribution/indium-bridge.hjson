@@ -1,0 +1,15 @@
+type: DuctBridge
+name: Indium Bridge
+description: Acts as a bridge for crossing ducts or terrain.
+health: 135
+size: 1
+requirements: [
+  indium/8
+  cement/2
+] 
+category: distribution
+research: indium-confluence
+squareSprite: false
+range: 5
+speed: 10
+researchCostMultiplier: 0.5
