@@ -1,0 +1,159 @@
+type: ItemTurret
+name: Dopple
+description: Fires alternating, powerful rounds towards enemies.
+size: 2
+squareSprite: false
+reload: 24
+heatColor: f7e392
+
+
+
+recoils: 2
+
+smokeEffect: shootBigSmoke
+category: turret
+research: {
+parent: core-flux
+requirements:[
+indium/120
+]
+}
+requirements: [
+indium/80
+]
+shoot: {
+  type: ShootAlternate
+  spread: 8
+  shots: 2
+  shotDelay: 0
+}
+range: 90
+shootSound: shockBlast
+shootEffect: casing2
+ammoTypes: {
+  indium: {
+    reloadMultiplier: 0.66666666666666
+    hitEffect: plasticExplosion
+    despawnEffect: unitDrop
+    type: BasicBulletType
+    speed: 4
+    lifetime: 20
+    damage: 9
+    pierce: false
+    keepVelocity: false
+    width: 9
+    height: 15
+    trailChance: -1
+    trailColor: 1b1e27
+    backColor: 1b1e27
+    frontColor: 475d5d
+    trailWidth: 2.5
+    trailLength: 40
+    lightRadius: 75
+    lightOpacity: 0.7
+    lightColor: 2e293a
+    spin: 0
+    layer: 99
+    ammoMultiplier: 1
+    fragBullets: 1
+    fragBullet:{
+     type: BasicBulletType
+     speed: 2
+     damage: 2
+     lifetime: 25
+     homingPower: 1
+     width: 8
+     height: 8
+     frontColor: 97bbc5
+     backColor: 5d667f
+     despawnEffect: unitDrop
+     hitEffect: blastExplosion
+    }
+  }
+  osmium: {
+    reloadMultiplier: 2
+    hitEffect: plasticExplosion
+    despawnEffect: unitDrop
+    type: BasicBulletType
+    speed: 6
+    lifetime: 20
+    damage: 14
+    homingPower: 3
+    pierce: true
+    pierceCap: 3
+    keepVelocity: false
+    width: 10
+    height: 20
+    trailChance: -1
+    trailColor: 7489a0
+    backColor: 7489a0
+    frontColor: 9ccad3
+    trailWidth: 2.5
+    trailLength: 40
+    lightRadius: 75
+    lightOpacity: 0.7
+    lightColor: d2e0ef
+    spin: 0
+    layer: 99
+    ammoMultiplier: 2
+    fragBullets: 3
+    fragBullet:{
+     type: BasicBulletType
+     speed: 1
+     damage: 2
+     lifetime: 25
+     homingPower: 5
+     width: 5
+     height: 8
+     frontColor: c6d8ed
+     backColor: a2adcb
+     despawnEffect: unitDrop
+     hitEffect: blastExplosion
+    }
+  }
+  
+}
+outlineColor: 0f1718
+inaccuracy: 1
+drawer: {
+  type: DrawTurret
+  baseSuffix: -base
+  parts: [
+    {
+      type: RegionPart
+      suffix: -barrel
+      mirror: true
+      alternate: true
+      under: false
+      progress:{
+      type: recoil
+      ops:[
+       {
+      op: curve
+      interp: circleOut
+      }
+      ]
+      }
+      moveY: -3
+      heatProgress: warmup
+    }
+        {
+      type: RegionPart
+      suffix: -wing
+      mirror: true
+      under: false
+      progress:{
+      type: warmup
+       ops:[
+       {
+       op: curve
+       interp: smooth2
+       }
+       ]
+       }
+      moveRot: 30
+      moveY: -2
+      moveX: 1.3
+    }
+  ]
+}
