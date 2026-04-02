@@ -27,8 +27,8 @@ shoot: {
   shots: 2
   shotDelay: 5
 }
-range: 90
-shootSound: shootElude
+range: 120
+shootSound: shootDuo
 shootEffect: casing2
 ammoTypes: {
   indium: {
@@ -37,7 +37,7 @@ ammoTypes: {
     despawnEffect: pulverize
     type: BasicBulletType
     speed: 4
-    lifetime: 20
+    lifetime: 25
     damage: 5
     pierce: false
     keepVelocity: false
@@ -48,7 +48,7 @@ ammoTypes: {
     backColor: 475d5d
     frontColor: 1b1e27
     trailWidth: 2.5
-    trailLength: 40
+    trailLength: 15
     lightRadius: 75
     lightOpacity: 0.7
     lightColor: 2e293a
@@ -76,8 +76,8 @@ ammoTypes: {
     despawnEffect: pulverizeMedium
     type: BasicBulletType
     speed: 6
-    lifetime: 20
-    damage: 12
+    lifetime: 15
+    damage: 8
     homingPower: 3
     pierce: false
     keepVelocity: false
@@ -88,7 +88,7 @@ ammoTypes: {
     backColor: 9ccad3
     frontColor: 7489a0
     trailWidth: 2.5
-    trailLength: 40
+    trailLength: 15
     lightRadius: 75
     lightOpacity: 0.7
     lightColor: d2e0ef
@@ -98,9 +98,9 @@ ammoTypes: {
     fragBullets: 3
     fragBullet:{
      type: BasicBulletType
-     speed: 1
-     damage: 30
-     lifetime: 60
+     speed: 2
+     damage: 10
+     lifetime: 30
      homingPower: 5
      width: 5
      height: 8
@@ -133,7 +133,7 @@ drawer: {
       }
       ]
       }
-      moveY: -1
+      moveY: -1.3
       heatProgress: warmup
     }
         {
