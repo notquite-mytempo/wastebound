@@ -11,6 +11,8 @@ tier: 1
 shake: 0.5
 itemCapacity: 20
 requirements: [
-  copper/111
+  indium/24
 ]
+research: core-flux
+researchCostMultiplier: 0.5
 squareSprite: false
