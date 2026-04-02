@@ -11,6 +11,9 @@ tier: 3
 shake: 1
 itemCapacity: 45
 requirements: [
-  copper/111
+  indium/60
+  cement/40
 ]
+research: rudimentary-excavator
+researchCostMultiplier: 0.5
 squareSprite: false
