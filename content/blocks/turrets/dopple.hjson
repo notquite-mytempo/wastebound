@@ -136,8 +136,8 @@ drawer: {
       }
       ]
       }
-      moveY: -1.3
-      recoilTime: 10
+      moveY: -0.5
+      recoilTime: 8
       heatProgress: warmup
     }
         {
