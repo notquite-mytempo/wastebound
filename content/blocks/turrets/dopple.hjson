@@ -19,7 +19,8 @@ indium/120
 ]
 }
 requirements: [
-indium/80
+indium/75
+cement/45
 ]
 shoot: {
   type: ShootAlternate
