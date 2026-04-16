@@ -3,7 +3,7 @@ name: Dopple
 description: Fires alternating, powerful rounds towards enemies.
 size: 2
 squareSprite: false
-reload: 24
+reload: 40
 heatColor: f7e392
 
 
@@ -24,11 +24,11 @@ indium/80
 shoot: {
   type: ShootAlternate
   spread: 8
-  shots: 2
-  shotDelay: 5
+  shots: 3
+  shotDelay: 8
 }
 range: 120
-shootSound: shootDuo
+shootSound: shootCleroi
 shootEffect: casing2
 ammoTypes: {
   indium: {
@@ -38,7 +38,7 @@ ammoTypes: {
     type: BasicBulletType
     speed: 4
     lifetime: 25
-    damage: 5
+    damage: 3
     pierce: false
     keepVelocity: false
     width: 9
@@ -50,7 +50,7 @@ ammoTypes: {
     trailWidth: 2.5
     trailLength: 15
     lightRadius: 75
-    lightOpacity: 0.7
+    lightOpacity: 0.4
     lightColor: 2e293a
     spin: 0
     layer: 99
@@ -59,7 +59,7 @@ ammoTypes: {
     fragBullet:{
      type: BasicBulletType
      speed: 2
-     damage: 15
+     damage: 9
      lifetime: 60
      homingPower: 4
      width: 8
@@ -129,7 +129,7 @@ drawer: {
       ops:[
        {
       op: curve
-      interp: circleOut
+      interp: swingOut
       }
       ]
       }
@@ -146,7 +146,7 @@ drawer: {
        ops:[
        {
        op: curve
-       interp: smooth2
+       interp: sineIn
        }
        ]
        }
