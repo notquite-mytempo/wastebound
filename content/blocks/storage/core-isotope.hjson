@@ -3,9 +3,9 @@ name: Core: Isotope
 armor: 12
 description: Core of the base. Armored and stores a higher amount of items.
 requirements: [
-  indium/3200
-  cement/2000
-  osmium/1500
+  indium/3500
+  cement/3000
+  osmium/2500
 ]
 solid: false
 buildVisibility: shown
@@ -22,7 +22,7 @@ requirements:[
   osmium/3000
   ]
   }
-unitType: rad
+unitType: fission
 health: 3450
 itemCapacity: 7500
 unitCapModifier: 16
