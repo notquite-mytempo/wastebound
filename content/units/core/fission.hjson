@@ -4,7 +4,7 @@ type: naval
 // change to your unit's name 
 name: Fission
 outlineColor: 0f1718
-speed: 0.9
+speed: 0.7
 drag: 0.13
 // hitSize 8 is one tile iirc, not sure
 hitSize: 16
@@ -33,7 +33,7 @@ weapons: [
     mirror: false
     rotate: true
     x: 0
-    y: -0.5
+    y: -0.7
 // reload is cool down between shots in ticks. One second is 60 ticks 
     reload: 60
 // the inaccuracy is offset by homing just to look cool
@@ -65,13 +65,13 @@ weapons: [
     }
   }
     {
-    x: 1.7
-    y: 1
+    x: 4.5
+    y: 1.2
     name: fission-swish
     mirror: true
     alternate: true
-    reload: 48
-    rotate: false
+    reload: 30
+    rotate: true
     shootSound: missile
     shoot: {
       shots: 3
@@ -81,7 +81,7 @@ weapons: [
       type: MissileBulletType
       speed: 3
       lifetime: 40
-      damage: 9
+      damage: 8
       width: 3
       height: 6
       trailWidth: 1
