@@ -2,7 +2,7 @@ type: Wall
 name: Large Cement Wall
 description: A large wall made from Cement. Protects allied structures from damage.
 size: 2
-health: 1240
+health: 1680
 category: defense
 squareSprite: false
 requirements: [
