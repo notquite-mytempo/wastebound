@@ -1,6 +1,6 @@
 type: mech
 name: Float
-description: Fires missiles and two lasers at enemies. Cannot cross terrain.
+description: Fires homing missiles and two lasers at enemies. Cannot cross terrain.
 hovering: true
 hoverable: true
 shadowElevation: 0.1
@@ -47,8 +47,8 @@ useEngineElevation: false
 lowAltitude: true
 weapons: [
   {
-    x: 3.7
-    y: -2
+    x: 6.7
+    y: 3
     name: float-missile
     mirror: true
     
@@ -79,7 +79,7 @@ weapons: [
     }
   }
     {
-    x: -1.4
+    x: -2.4
     y: -1
     mirror: false
     name: float-lazer-l
@@ -88,7 +88,7 @@ weapons: [
     rotate: true
     ejectEffect: none
     shootSound: beamHeal
-    shootY: 1.5
+    shootY: 0.5
     bullet: {
       collides: true
       collidesTiles: true
@@ -109,7 +109,7 @@ weapons: [
     }
 }
     {
-    x: 1.4
+    x: 2.4
     y: -1
     mirror: false
     name: float-lazer-r
@@ -118,7 +118,7 @@ weapons: [
     rotate: true
     ejectEffect: none
     shootSound: beamHeal
-    shootY: 1.5
+    shootY: 0.5
     bullet: {
       collides: true
       collidesTiles: true
