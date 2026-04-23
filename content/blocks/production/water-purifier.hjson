@@ -32,3 +32,10 @@ consumes: {
 craftTime: 60
 craftEffect: none
 outputLiquid: water/0.15
+research:{
+  parent: core-flux
+  requirements:[
+    indium/400
+    cement/250
+  ]
+}
