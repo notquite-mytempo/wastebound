@@ -61,3 +61,7 @@ ammoTypes: {
   }
 }
 rotate: false
+drawer:{
+  type: drawTurret
+  basePrefix: wastebound-
+}
