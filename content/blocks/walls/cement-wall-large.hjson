@@ -9,3 +9,9 @@ requirements: [
   cement/32
 ] 
 researchCostMultiplier: 0.05
+research:{
+  parent: cement-wall
+  requirements:[
+    cement/400
+  ]
+}
