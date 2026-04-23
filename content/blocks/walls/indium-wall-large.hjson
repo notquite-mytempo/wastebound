@@ -1,0 +1,17 @@
+type: Wall
+name: Large Indium Wall
+description: A large wall made from Indium. Protects allied structures from damage.
+size: 2
+health: 1460
+category: defense
+squareSprite: false
+requirements: [
+  indium/24
+] 
+researchCostMultiplier: 0.05
+  research:{
+    parent: core-flux
+    requirements:[
+      indium/400
+    ]
+  }
