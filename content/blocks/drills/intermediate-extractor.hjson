@@ -14,6 +14,12 @@ requirements: [
   indium/60
   cement/40
 ]
-research: rudimentary-excavator
+research:{
+  parent: rudimentary-excavator
+  requirements:[
+    indium/450
+    cement/300
+  ]
+}
 researchCostMultiplier: 0.5
 squareSprite: false
