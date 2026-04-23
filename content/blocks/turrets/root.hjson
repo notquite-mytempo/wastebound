@@ -27,12 +27,12 @@ outlineColor: 42413e
 targetAir: false
 targetGround: true
 reload: 60
-range: 160
+range: 240
 velocityRnd: 0.12
-inaccuracy: 8
+inaccuracy: 10
 shoot: {
-  shots: 5
-  shotDelay: 0.5
+  shots: 8
+  shotDelay: 0.8
 }
 ammoTypes: {
   cement: {
@@ -42,7 +42,7 @@ ammoTypes: {
     type: ArtilleryBulletType
     width: 7
     height: 9
-    speed: 2
+    speed: 3
     lifetime: 80
     splashDamage: 8
     splashDamageRadius: 8
