@@ -45,9 +45,9 @@ ammoTypes: {
     width: 9
     height: 15
     trailChance: -1
-    trailColor: 475d5d
-    backColor: 475d5d
-    frontColor: 1b1e27
+    trailColor: 819095
+    backColor: 819095
+    frontColor: c9d3d7
     trailWidth: 2.5
     trailLength: 15
     lightRadius: 75
@@ -59,7 +59,7 @@ ammoTypes: {
     fragBullets: 1
     fragBullet:{
      type: BasicBulletType
-     speed: 2
+     speed: 0.5
      damage: 9
      lifetime: 60
      homingPower: 4
@@ -85,9 +85,9 @@ ammoTypes: {
     width: 10
     height: 20
     trailChance: -1
-    trailColor: 9ccad3
-    backColor: 9ccad3
-    frontColor: 7489a0
+    trailColor: 7f92bc
+    backColor: 7f92bc
+    frontColor: b4ecff
     trailWidth: 2.5
     trailLength: 15
     lightRadius: 75
