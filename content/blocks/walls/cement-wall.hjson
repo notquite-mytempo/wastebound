@@ -9,3 +9,9 @@ requirements: [
   cement/8
 ] 
 researchCostMultiplier: 0.05
+research:{
+  parent:indium-wall-large
+  requirements:[
+    cement/100
+  ]
+}
