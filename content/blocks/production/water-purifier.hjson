@@ -5,7 +5,8 @@ size: 3
 squareSprite: false
 category: crafting
 requirements: [
-  copper/6767
+  indium/45
+  cement/25
 ]
 drawer: {
   type: DrawMulti
