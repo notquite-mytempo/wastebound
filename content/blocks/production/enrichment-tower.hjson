@@ -17,7 +17,7 @@ outputItems: [
   ]
 category: crafting
 requirements: [
-  copper/67
-  lead/67
-  titanium/67
+  indium/550
+  cement/350
+  osmium/50
 ]
