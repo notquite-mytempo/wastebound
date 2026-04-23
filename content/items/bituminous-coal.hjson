@@ -1,0 +1,8 @@
+name: Lignite
+description: A softer and younger coal type perfectly usable for generating power
+hardness: 1.4
+flammability: 1.3
+cost: 0.5
+research: indium
+color: 1e1c1b
+hiddenOnPlanets: [serpulo, erekir]
