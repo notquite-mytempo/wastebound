@@ -47,8 +47,8 @@ useEngineElevation: false
 lowAltitude: true
 weapons: [
   {
-    x: 6.7
-    y: 3
+    x: 5.5
+    y: 2.5
     name: float-missile
     mirror: true
     
@@ -80,7 +80,7 @@ weapons: [
   }
     {
     x: -2.4
-    y: -1
+    y: 0.5
     mirror: false
     name: float-lazer-l
     continuous: true
@@ -110,7 +110,7 @@ weapons: [
 }
     {
     x: 2.4
-    y: -1
+    y: 0.5
     mirror: false
     name: float-lazer-r
     continuous: true
