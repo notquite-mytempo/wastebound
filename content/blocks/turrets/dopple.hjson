@@ -117,7 +117,7 @@ outlineColor: 0f1718
 inaccuracy: 1
 drawer: {
   type: DrawTurret
-  baseSuffix: -base
+  basePrefix: wastebound-
   parts: [
     {
       type: RegionPart
