@@ -51,9 +51,10 @@ weapons: [
     y: -2
     name: float-missile
     mirror: true
+    
     alternate: true
     reload: 30
-    rotate: false
+    rotate: true
     shootSound: shootMissile
     inaccuracy: 40
     shoot: {
@@ -78,12 +79,13 @@ weapons: [
     }
   }
     {
-    x: -8.4
+    x: -1.4
     y: -1
     mirror: false
     name: float-lazer-l
     continuous: true
     alwaysContinuous: true
+    rotate: true
     ejectEffect: none
     shootSound: beamHeal
     shootY: 1.5
@@ -107,12 +109,13 @@ weapons: [
     }
 }
     {
-    x: 8.4
+    x: 1.4
     y: -1
     mirror: false
     name: float-lazer-r
     continuous: true
     alwaysContinuous: true
+    rotate: true
     ejectEffect: none
     shootSound: beamHeal
     shootY: 1.5
