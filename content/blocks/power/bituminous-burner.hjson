@@ -1,0 +1,43 @@
+type: ConsumeGenerator
+name: Bituminous Burner
+description: Burns flammable materials to create power.
+size: 2
+category: power
+research: {
+  parent: core-flux
+//  objectives: [
+//    {
+//      type: OnSector
+//      preset: 
+//    }
+//  ]
+}
+squareSprite: false
+requirements: [
+  indium/30
+  cement/25
+]
+consumes: {
+  itemFlammable: {}
+}
+powerProduction: 0.8
+itemDuration: 120
+generateEffect: generatespark
+ambientSound: smelter
+ambientSoundVolume: 0.03
+drawer: {
+  type: DrawMulti
+  drawers: [
+    {
+      type: DrawRegion
+      suffix: -bottom
+    }
+    {
+      type: DrawCrucibleFlame
+    }
+    {
+      type: DrawDefault
+    }
+  ]
+} 
+researchCostMultiplier: 0.5
