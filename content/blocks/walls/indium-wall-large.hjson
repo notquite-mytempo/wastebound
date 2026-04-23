@@ -10,7 +10,7 @@ requirements: [
 ] 
 researchCostMultiplier: 0.05
   research:{
-    parent: core-flux
+    parent: indium-wall
     requirements:[
       indium/400
     ]
