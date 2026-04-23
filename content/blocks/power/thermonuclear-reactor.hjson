@@ -7,7 +7,9 @@
 squareSprite: false
 fuelItem: uranium-235
   requirements: [
-  copper/67
+  indium/300
+  cement/450
+  osmium/150
 ]
 liquidCapacity: 60
 powerProduction: 25
