@@ -24,3 +24,5 @@ research: {
   name: Vastis
   requiresUnlock: false
 }
+requiresCoreZone: true
+environments:[ water, deepwater ]
