@@ -2,17 +2,17 @@ type: legs
 name: Nettle
 description: A small and relatively nimble "spider" with two legs. Shoots bullets at enemies.
 speed: 0.6
-health: 450
-armor: 2
+health: 420
+armor: 1
 flying: false
-legExtension: 0.3
-legMoveSpace: 1.2
+legExtension: -2.5
+buildSpeed: 0.6
+legMoveSpace: 0.9
 hovering: false
-isEnemy: false
-legCount: 4
-legLength: 19
-legSpeed: 0.14
-legForwardScl: 0.67
+legCount: 6
+legLength: 8
+legSpeed: 0.23
+legForwardScl: 0.56
 outlineColor: 0f1718
 hitSize: 6
 researchCostMultiplier: 1.5
