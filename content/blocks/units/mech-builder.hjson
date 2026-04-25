@@ -1,7 +1,7 @@
 type: UnitFactory
 name: Mech Builder
 description: Utilizes materials and power to fabricate a Nettle.
-size: 3
+size: 2
 health: 400
 configurable: false
 requirements: [
