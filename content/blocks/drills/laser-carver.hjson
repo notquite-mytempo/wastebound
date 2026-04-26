@@ -1,0 +1,36 @@
+type: beamDrill
+name: Laser Carver
+description: Utilizes piercing lasers to extract ores from wall with intense precision. Can be boosted with Dichromate.
+health: 450
+range: 4
+tier: 2
+size: 3
+optionalBoostIntensity: 2.6
+drillTime: 180
+ambientSound: loopMineBeam
+ambientSoundVolume: 0.04
+hasLiquids: true
+consumes: {
+  liquid: water/0.05
+  power: 0.25
+  liquids: {
+    liquids: [
+      dichromate/0.1
+    ]
+    optional: true
+    booster: true
+  }
+}
+buildCostMultiplier: 2
+category: production
+research: rudimentary-excavator
+researchCost: [
+  indium/850
+  cement/400
+  osmium/300
+]
+requirements: [
+  indium/50
+  cement/40
+  osmium/25
+]
