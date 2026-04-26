@@ -1,6 +1,6 @@
 name: Bituminous Coal
-description: A softer and younger coal type perfectly usable for generating power
-hardness: 1.3
+description: A type of coal usable for generating power.
+hardness: 1.1
 flammability: 1.3
 cost: 0.5
 research: indium
