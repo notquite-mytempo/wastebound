@@ -1,0 +1,17 @@
+type: LiquidJunction
+size: 1
+solid: false
+underBullets: true
+category: liquid
+name: Pressure Junction
+description: Allows two channels to pass through eachother without converging.
+squareSprite: false
+research: pressure-channel
+health: 65
+requirements: [
+  cement/4
+]
+buildCostMultiplier: 2
+researchCost: [
+  cement/10
+]
