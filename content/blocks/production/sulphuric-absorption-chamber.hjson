@@ -1,0 +1,40 @@
+type: GenericCrafter
+name: Sulphuric Absorption Chamber
+description: Mixes Sulphur and Toxic Water to produce Sulphuric Acid. Requires power.
+size: 2
+hasLiquids: true
+squareSprite: false
+liquidCapacity: 80
+itemCapacity: 25
+craftTime: 120
+outputLiquid: sulphuric-acid/0.15
+consumes: {
+  liquids: [
+    toxic-water/0.3
+  ]
+  items: [
+    sulphur/4
+  ]
+}
+category: liquid
+research: water-purifier
+requirements: [
+  indium/90
+  cement/70
+  osmium/30
+  sulphur/20
+]
+drawer: {
+  type: DrawMulti
+  drawers: [
+    {
+      type: DrawLiquidTile
+      drawLiquid: sulphuric-acid
+      padding: 1.5
+      alpha: 0.5
+    }
+  ]
+}
+researchCostMultiplier: 0.2
+ambientSound: loopMachineSpin
+ambientSoundVolume: 0.1
