@@ -30,10 +30,16 @@ drawer: {
   type: DrawMulti
   drawers: [
     {
+      type: DrawRegion
+      suffix: -bottom
+    }
+    {
       type: DrawLiquidTile
       drawLiquid: dichromate
-      padding: 1.5
-      alpha: 0.7
+      padding: 3
+    }
+    {
+      type: DrawDefault
     }
   ]
 }
