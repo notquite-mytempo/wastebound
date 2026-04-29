@@ -49,6 +49,7 @@ requirements: [
     "flameRadiusScl": 4,  
     "flameRadiusMag": 2,    
     "flameRadiusInMag": 1.7
+     top: sulphuric-absorption-chamber-top
    }
                ]
 researchCostMultiplier: 0.2
