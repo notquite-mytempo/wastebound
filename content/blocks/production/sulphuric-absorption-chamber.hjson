@@ -52,7 +52,6 @@ requirements: [
     }
   ]
 }
-               ]
 researchCostMultiplier: 0.2
 ambientSound: loopMachineSpin
 ambientSoundVolume: 0.1
