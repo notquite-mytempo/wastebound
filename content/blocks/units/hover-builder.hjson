@@ -1,0 +1,33 @@
+type: UnitFactory
+name: Hover Builder
+description: Utilizes materials and power to fabricate a Float.
+size: 2
+health: 400
+configurable: false
+requirements: [
+  indium/120
+  cement/75
+]
+category: units
+plans: [
+  {
+    type: FactoryUnitPlan
+    unit: nettle
+    requirements: [
+      indium/40
+      cement/30
+    ]
+    time: 1500
+  }
+]
+consumes: {
+  power: 2
+  liquid: water/0.15
+}
+research: {
+  parent: core-flux
+}
+researchCost: [
+  indium/350
+  cement/200
+]
