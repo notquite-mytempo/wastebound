@@ -1,0 +1,29 @@
+type: GenericCrafter
+name: Coke Furnace
+description: Smelts Bituminous Coal to produce Coke. Requires power.
+size: 2
+health: 250
+squareSprite: false
+craftEffect: blockExplosionSmoke
+outputItems: [
+  coke/1
+]
+consumes: {
+  power: 0.5
+  items: [
+    bituminous-coal/2
+  ]
+}
+craftTime: 90
+category: crafting
+requirements: [
+  indium/55
+  cement/30
+]
+research: cement-mixer
+researchCost:[
+  indium/300
+  cement/150
+]
+ambientSound: loopSmelter
+ambientSoundVolume: 0.08
