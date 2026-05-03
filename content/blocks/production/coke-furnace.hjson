@@ -31,14 +31,13 @@ drawer: {
   type: DrawMulti
   drawers: [
     {
-      type: DrawRegion
-      suffix: -bottom
-    }
-    {
-      type: DrawCrucibleFlame
-    }
-    {
       type: DrawDefault
     }
+    {
+      type: DrawFlame
+      flameColor: 94a0ca
+      flameRadius: 4.5
+      flameRadiusMag: 1
+    }
   ]
-} 
+}
