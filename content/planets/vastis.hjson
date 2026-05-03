@@ -147,9 +147,9 @@ generator: {
 }
 orbitRadius: 70
 sectorSize: 2
-allowLaunchSchematics: true
-allowLaunchToNumbered: true
-allowLaunchLoadout: true
+allowLaunchSchematics: false
+allowLaunchToNumbered: false
+allowLaunchLoadout: false
 allowSectorInvasion: false
 startSector: 0
 orbitSpacing: 1
