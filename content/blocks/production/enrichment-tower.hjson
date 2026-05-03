@@ -6,14 +6,14 @@ squareSprite: false
 consumes: {
   power: 3
   items: [
-    yellowcake/6
+    yellowcake/3
   ]
 }
 craftTime: 180
 craftEffect: circleColorSpark
 outputItems: [ 
   uranium-235/2
-  depleted-uranium/4
+  depleted-uranium/3
   ]
 category: crafting
 requirements: [
