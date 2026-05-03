@@ -172,7 +172,7 @@ allowWaveSimulation: true
 clearSectorOnLose: false
 allowWaves: true
 prebuildBase: false
-defaultCore: core-flux
+defaultCore: wastebound-core-flux
 parent: sun
 solarSystem: sun
 launchCandidates: []
