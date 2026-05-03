@@ -1,0 +1,8 @@
+name: Coke
+description: A refined type of coal that can be used for building.
+hardness: 2
+flammability: 1
+cost: 0.3
+research: bituminous-coal
+color: 94a0ca
+hiddenOnPlanets: [serpulo, erekir]
