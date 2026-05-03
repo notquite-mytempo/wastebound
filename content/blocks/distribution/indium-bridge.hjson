@@ -5,11 +5,12 @@ health: 135
 size: 1
 requirements: [
   indium/8
-  cement/2
 ] 
 category: distribution
 research: indium-confluence
+researchCost:[
+  indium/80
+]
 squareSprite: false
 range: 5
 speed: 4
-researchCostMultiplier: 0.5
