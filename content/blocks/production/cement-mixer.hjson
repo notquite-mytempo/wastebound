@@ -20,7 +20,9 @@ requirements: [
   indium/80
 ]
 research: core-flux
-researchCostMultiplier: 0.5
+researchCost:[
+  indium/60
+]
 ambientSound: grinding
 ambientSoundVolume: 0.08
 
