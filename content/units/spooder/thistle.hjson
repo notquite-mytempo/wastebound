@@ -1,0 +1,92 @@
+type: legs
+name: Thistle
+description: A Nettle that has been upgraded to its next tier, gaining extra artillery.
+speed: 0.8
+health: 640
+armor: 3
+flying: false
+legExtension: -1
+legMoveSpace: 2
+hovering: false
+legCount: 4
+legLength: 12
+legSpeed: 0.2
+legForwardScl: 0.62
+outlineColor: 0f1718
+hitSize: 8
+researchCostMultiplier: 1.5
+stepSound: walkerStepTiny
+weapons: [
+  {
+// change the weapon name to (your unit's name)-weapon 
+    name: thistle-pew
+    mirror: true
+    alternate: true
+    rotate: true
+    x: 6
+    y: 1
+// reload is cool down between shots in ticks. One second is 60 ticks 
+    reload: 15
+// the inaccuracy is offset by homing just to look cool
+    inaccuracy: 35
+    shootSound: shoot
+    shootEffect: casing2
+        minWarmup : 0.05
+  
+    bullet: {
+      lifetime: 70
+      speed: 2.5
+      type: BasicBulletType
+      width: 9
+      height: 11
+      damage: 10
+      pierceDamageFactor: 0
+// this makes it home in slightly after ¼ of a second  
+      homingDelay: 15
+      homingPower: 0.3
+      backColor: 855c4e
+      frontColor: efccbf
+      trailColor: 855c4e
+      trailLength: 10
+      trailWidth: 1.5
+      hitEffect: flakExplosion
+      despawnEffect: blockExplosionSmoke
+    }
+}
+  {
+// change the weapon name to (your unit's name)-weapon 
+    name: thistle-artillery
+    mirror: false
+    rotate: true
+    x: 0
+    y: -1
+// reload is cool down between shots in ticks. One second is 60 ticks 
+    reload: 60
+    shootSound: shoot
+    shootEffect: casing2
+        minWarmup : 0.05
+  
+    bullet: {
+      lifetime: 60
+      speed: 1.5
+      type: ArtilleryBulletType
+      width: 15
+      height: 15
+      damage: 20
+      splashDamage: 10
+      pierceDamageFactor: 0
+      backColor: 855c4e
+      frontColor: efccbf
+      trailColor: 855c4e
+      trailLength: 12
+      trailWidth: 2
+      hitEffect: flakExplosion
+      despawnEffect: blockExplosionSmoke
+    }
+}
+]
+research: nettle
+researchCost:[
+  indium/150
+  cement/60
+]
