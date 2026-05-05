@@ -5,11 +5,11 @@ speed: 0.8
 health: 640
 armor: 3
 flying: false
-legExtension: -1
-legMoveSpace: 0.9
+legExtension: -3
+legMoveSpace: 0.6
 hovering: false
 legCount: 4
-legLength: 24
+legLength: 28
 legSpeed: 0.2
 legForwardScl: 0.62
 outlineColor: 0f1718
