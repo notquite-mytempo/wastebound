@@ -1,29 +1,35 @@
 type: GenericCrafter
-name: Coke Furnace
-description: Smelts Bituminous Coal to produce Coke. Requires power.
+name: Lithate Kiln
+description: Smelts Indium and Coke to produce Lithate. Requires power and water.
 size: 2
 health: 250
 squareSprite: false
 craftEffect: blockExplosionSmoke
 outputItems: [
-  coke/1
+  lithate/2
 ]
 consumes: {
-  power: 0.5
+  power: 1
   items: [
-    bituminous-coal/2
+    indium/2
+    coke/2
   ]
+   liquid: water/0.3
 }
 craftTime: 90
 category: crafting
 requirements: [
-  indium/55
-  cement/30
+  indium/90
+  cement/70
+  coke/60
+  osmium/40
 ]
-research: cement-mixer
+research: coke-furnace
 researchCost:[
-  indium/300
-  cement/150
+  indium/4000
+  cement/3000
+  coke/500
+  osmium/200
 ]
 ambientSound: loopSmelter
 ambientSoundVolume: 0.08
