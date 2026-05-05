@@ -1,0 +1,7 @@
+name: Lithate
+description: A quite powerful material created with Indium and Coke. Used in advanced building.
+hardness: 3
+buildable: true
+explosiveness: 0
+radioactivity: 0
+color: 8db6ca
