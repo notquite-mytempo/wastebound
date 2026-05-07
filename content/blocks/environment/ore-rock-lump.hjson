@@ -1,0 +1,3 @@
+type: OreBlock
+name: Rock Lump
+itemDrop: irradiated-rock
