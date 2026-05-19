@@ -1,0 +1,60 @@
+research: core-flux
+type: RegenProjector
+name: Rejuvenation Cell
+description: Slowly repairs nearby allied blocks. Requires power. May be optionally boosted with Chromium. 
+size: 2
+range: 10
+baseColor: 81dba0
+squareSprite: false
+effect: {
+  type: ParticleEffect
+  colorFrom: baf5f5
+  colorTo: 3f795b
+  particles: 8
+  length: 3
+  baseLength: 2
+  strokeFrom: 1
+  strokeTo: 0.2
+  lifetime: 60
+  cone: 360
+  interp: pow2
+  sizeInterp: pow2Out
+}
+consumes: {
+  power: 0.5
+  items: {
+    items: [
+      chromium/1
+    ]
+    optional: true
+    booster: true
+  }
+}
+optionalUseTime: 120
+optionalMultiplier: 2.5
+healPercent: 0.09
+requirements: [
+  indium/80
+  cement/70
+  lithate/50
+]
+category: effect
+drawer: {
+  type: DrawMulti
+  drawers: [
+    {
+      type: DrawDefault
+    }
+    {
+      type: DrawPulseShape
+      square: true
+      color: 81dba0
+      layer: 110
+    }
+  ]
+}
+researchCost:[
+  indium/1500
+  cement/900
+  lithate/500
+]
