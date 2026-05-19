@@ -13,7 +13,7 @@ circleTarget: false
 faceTarget: true
 loopSound: none
 deathSound: none
-trailColor: 18181a18
+trailColor: 18181a
 aimDst: 4
 drawCell: false
 engineSize: 0
@@ -31,6 +31,8 @@ weapons: [
       type: ExplosionBulletType
       splashDamage: 40
       splashDamageRadius: 24
+      status: status-infested
+      statusDuration: 240
       ammoMultiplier: 3
       fragBullets: 3
       fragBullet: {
@@ -38,11 +40,13 @@ weapons: [
         width: 2
         height: 9
         speed: 5
-        damage: 10
+        damage: 15
         shrinkX: 0
         shrinkY: 0
         pierce: false
         lifetime: 5
+        status: status-infested
+        statusDuration: 180
       }
     }
   } 
