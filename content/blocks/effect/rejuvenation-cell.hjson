@@ -32,7 +32,7 @@ consumes: {
 }
 optionalUseTime: 120
 optionalMultiplier: 2.5
-healPercent: 0.09
+healPercent: 0.02
 requirements: [
   indium/80
   cement/70
