@@ -6,7 +6,7 @@ drawCell: false
 outlineColor: 0f1718
 drag: 0.08
 accel: 0.09
-health: 140
+health: 240
 armor: 2
 speed: 2
 hitSize: 8
@@ -18,6 +18,7 @@ weapons: [
     name: mold-mold-floater-larvaspawn
     x: -1.5
     y: 0.3
+    mirror: false
     reload: 85
     rotate: true
     shootSound: stepMud
