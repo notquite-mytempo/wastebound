@@ -11,9 +11,11 @@ armor: 2
 speed: 2
 hitSize: 8
 flying: true
+engineSize: 0
 faceTarget: false
 weapons: [
   {
+    name: mold-mold-floater-larvaspawn
     x: -1.5
     y: 0.3
     reload: 85
