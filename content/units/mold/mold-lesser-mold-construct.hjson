@@ -1,0 +1,52 @@
+type: legs
+name: Lesser Mold Construct
+description: hmm
+speed: 0.8
+health: 80
+armor: 1
+flying: false
+legExtension: -2.5
+legMoveSpace: 1.2
+hovering: false
+legCount: 3
+legLength: 8
+legSpeed: 0.13
+legForwardScl: 0.62
+outlineColor: 0f1718
+hitSize: 4
+researchCostMultiplier: 1.5
+stepSound: walkerStepTiny
+weapons: [
+  {
+// change the weapon name to (your unit's name)-weapon 
+    name: nettle-gun
+    mirror: false
+    x: 0
+    y: 3
+// reload is cool down between shots in ticks. One second is 60 ticks 
+    reload: 60
+// the inaccuracy is offset by homing just to look cool
+    inaccuracy: 0
+    shootSound: shoot
+    shootEffect: casing2
+        minWarmup : 0.05
+  
+    bullet: {
+      lifetime: 9
+      speed: 7
+      type: BasicBulletType
+      width: 13
+      height: 14
+      damage: 5
+      pierceDamageFactor: 0
+// this makes it home in slightly after ¼ of a second  
+      backColor: 855c4e
+      frontColor: efccbf
+      trailColor: 855c4e
+      trailLength: 8
+      trailWidth: 1.5
+      hitEffect: flakExplosion
+      despawnEffect: blockExplosionSmoke
+    }
+}
+]
