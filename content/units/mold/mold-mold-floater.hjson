@@ -3,7 +3,7 @@ lowAltitude: true
 name: Mold Floater
 description: A peculiar construct of The Mold that floats above terrain utilizing spore cysts on its surface inflated with whatever gas was nearby at its birth. Launches larvae that brutally explode upon impact, spreading spores
 drawCell: false
-outlineColor: 232028
+outlineColor: 0f1718
 drag: 0.08
 accel: 0.09
 health: 140
