@@ -25,20 +25,18 @@ weapons: [
     y: 1.5
 // reload is cool down between shots in ticks. One second is 60 ticks 
     reload: 60
-// the inaccuracy is offset by homing just to look cool
     inaccuracy: 0
     shootSound: stepMud
   
   
     bullet: {
-      lifetime: 5
+      lifetime: 13
       speed: 4
       type: BasicBulletType
       width: 13
       height: 14
       damage: 5
-      pierceDamageFactor: 0
-// this makes it home in slightly after ¼ of a second  
+      pierceDamageFactor: 0  
       backColor: 161325
       frontColor: 403354
       trailColor: 161325
@@ -48,44 +46,4 @@ weapons: [
       despawnEffect: blockExplosionSmoke
     }
 }
-
-{
-    name: biological-dead-switch
-    mirror: false
-    x: 0
-    y: 0
-    
-    # Keeps the weapon from firing while the crawler is alive
-    reload: 999999 
-    
-    # Crucial settings to bind the firing point directly to the central chassis
-    alternate: false
-    baseRotation: 0
-    shootCone: 360
-    
-    bullet: {
-      type: BombBulletType
-      lifetime: 0
-      speed: 0
-      
-      # When the unit dies, Mindustry forces its weapon arrays to fragment.
-      # This triggers the spawnBullets block immediately at its coordinates.
-      spawnBullets: [
-        {
-          type: BulletType
-          collides: true
-          hitEffect: coreExplosion
-          despawnEffect: sapExplosion
-          
-          # The damage configuration you want applied on death
-          splashDamage: 300
-          splashDamageRadius: 48 # 6 tiles radius (6 * 8 world units)
-          
-          # Optional bio-mod flavor: inflicts corrosive properties on survivors
-          status: corroded
-          statusDuration: 180
-        }
-      ]
-    }
-  }
 ]
