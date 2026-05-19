@@ -19,30 +19,29 @@ stepSound: walkerStepTiny
 weapons: [
   {
 // change the weapon name to (your unit's name)-weapon 
-    name: nettle-gun
+    name: mold-lesser-mold-construct-mouth
     mirror: false
     x: 0
-    y: 3
+    y: 1.5
 // reload is cool down between shots in ticks. One second is 60 ticks 
     reload: 60
 // the inaccuracy is offset by homing just to look cool
     inaccuracy: 0
-    shootSound: shoot
-    shootEffect: casing2
-        minWarmup : 0.05
+    shootSound: stepMud
+  
   
     bullet: {
-      lifetime: 9
-      speed: 7
+      lifetime: 5
+      speed: 4
       type: BasicBulletType
       width: 13
       height: 14
       damage: 5
       pierceDamageFactor: 0
 // this makes it home in slightly after ¼ of a second  
-      backColor: 855c4e
-      frontColor: efccbf
-      trailColor: 855c4e
+      backColor: 161325
+      frontColor: 403354
+      trailColor: 161325
       trailLength: 8
       trailWidth: 1.5
       hitEffect: flakExplosion
