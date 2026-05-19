@@ -44,6 +44,8 @@ weapons: [
       trailWidth: 1.5
       hitEffect: flakExplosion
       despawnEffect: blockExplosionSmoke
+      status: status-infested
+      statusDuration: 160
     }
 }
 ]
