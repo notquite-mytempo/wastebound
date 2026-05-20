@@ -1,0 +1,12 @@
+type: RainWeather
+color: 5d7a63
+xspeed: 1
+yspeed: 2
+minAlpha: 0.02
+maxAlpha: 0.1
+sizeMin: 8
+sizeMax: 35
+density: 600
+sound: none
+liquid: toxic-water
+name: Rain (Vastis)
