@@ -38,4 +38,41 @@ weapons: [
           frontColor: 00000000
 }
     }
+  {
+  //wing R 1
+  x: 0
+  y: 0
+  //somehow, parts do not work without this useless sprite
+  name: rammer-deco
+  mirror: false
+  recoil: 0
+  reload: 30
+  alwaysShooting: true
+  shootSound: none
+  rotate: false
+  parts: [
+    {
+    type: RegionPart
+    suffix: -wing
+    progress: smoothReload
+    x: 6
+    y: 0
+    xScl: 1.25
+    yScl: 1.25
+    rotation: -3
+    moveRot: 3
+    }
+  ]
+  bullet: {
+    type: BulletType
+    speed: 0
+    lifetime: 0
+    collides: false
+    damage: 0
+    despawnEffect: none
+    smokeEffect: none
+    hitEffect: none
+    shootEffect: none
+    }
+  }
 ]
