@@ -14,7 +14,7 @@ hitSize: 12
 flying: true
 engineSize: 0
 faceTarget: true
-circleTargetRadius: 80
+circleTargetRadius: 19
 rotateSpeed: 8
 weapons: [
   {
