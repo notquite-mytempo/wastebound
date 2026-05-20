@@ -23,7 +23,9 @@ weapons: [
     mirror: false
     reload: 60
     rotate: true
-    shootSound: stepMud
+    shootSound: explosionCleroi
+    shootEffect: shootSmokeSquare
+    shootColor: ffffff3e
     shootSoundVolume: 1.45
       bullet: {
           type: BasicBulletType
@@ -36,6 +38,9 @@ weapons: [
           height: 12
           backColor: 00000000
           frontColor: 00000000
+          hitEffect: shootSmokeSquareBig
+          hitColor: 4f385c
+          hitSound: shootEnergyField
 }
     }
   {
