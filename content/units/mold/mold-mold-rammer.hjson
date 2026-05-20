@@ -15,9 +15,8 @@ engineSize: 0
 faceTarget: false
 weapons: [
   {
-    name: mold-mold-floater-larvaspawn
     x: 0
-    y: 2
+    y: 2.5
     mirror: false
     reload: 60
     rotate: false
