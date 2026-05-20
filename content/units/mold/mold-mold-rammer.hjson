@@ -12,14 +12,14 @@ speed: 2.5
 hitSize: 12
 flying: true
 engineSize: 0
-faceTarget: false
+faceTarget: true
 weapons: [
   {
     x: 0
     y: 4
     mirror: false
     reload: 60
-    rotate: false
+    rotate: true
     shootSound: stepMud
     shootSoundVolume: 1.45
       bullet: {
