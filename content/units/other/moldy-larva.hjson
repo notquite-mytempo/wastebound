@@ -4,7 +4,7 @@ flying: true
 speed: 2
 useUnitCap: false
 physics: false
-lifetime: 40
+lifetime: 45
 rotateSpeed: 0.2
 trailLength: 5
 autoFindTarget: false
@@ -52,6 +52,8 @@ weapons: [
       splashDamageRadius: 24
       status: status-infested
       statusDuration: 240
+      hitEffect: hitSquaresColor
+      hitColor: 583b5a
       ammoMultiplier: 3
       fragBullets: 3
       fragBullet: {
@@ -63,7 +65,7 @@ weapons: [
         shrinkX: 0
         shrinkY: 0
         pierce: false
-        lifetime: 5
+        lifetime: 10
         status: status-infested
         statusDuration: 180
       }
