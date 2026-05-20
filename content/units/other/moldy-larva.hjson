@@ -20,6 +20,25 @@ engineSize: 0
 outlines: false
 range: 4
 hidden: true
+
+abilities: [
+  {
+    type: MoveEffectAbility
+    interval: 4
+    effect: {
+      type: ParticleEffect
+      particles: 12
+      length: 3.2
+      baseLength: 3
+      strokeFrom: 2.2
+      strokeTo: 1.6
+      colorFrom: b06e89
+      colorTo: 6d4577
+    }
+    rotateEffect: true
+  }
+]
+
 weapons: [
   {
     reload: 1
