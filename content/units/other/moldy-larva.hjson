@@ -32,8 +32,8 @@ abilities: [
       baseLength: 1.6
       strokeFrom: 1.3
       strokeTo: 0.4
-      colorFrom: dea189
-      colorTo: 734030
+      colorFrom: 583b5a
+      colorTo: 231d3223
     }
     rotateEffect: true
   }
