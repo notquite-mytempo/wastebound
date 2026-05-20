@@ -1,6 +1,6 @@
 type: CoreBlock
 name: Core: Isotope
-armor: 12
+armor: 16
 description: Core of the base. Armored and stores a higher amount of items.
 requirements: [
   indium/3500
@@ -23,7 +23,7 @@ requirements:[
   ]
   }
 unitType: fission
-health: 3450
+health: 6200
 itemCapacity: 7500
 unitCapModifier: 24
 category: effect
