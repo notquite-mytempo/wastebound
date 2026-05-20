@@ -21,8 +21,9 @@ weapons: [
     x: 0
     y: 4
     mirror: false
-    reload: 60
+    reload: 45
     rotate: true
+    rotateSpeed: 60
     shootSound: explosionCleroi
     shootEffect: shootSmokeSquare
     shootColor: ffffff3e
