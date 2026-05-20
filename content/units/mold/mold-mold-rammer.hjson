@@ -1,0 +1,39 @@
+type: flying
+lowAltitude: true
+name: Mold Rammer
+description: A peculiar construct of The Mold that charges towards the target to pierce it with its sharp teeth.
+drawCell: false
+outlineColor: 0f1718
+drag: 0.12
+accel: 0.09
+health: 460
+armor: 0
+speed: 2.5
+hitSize: 12
+flying: true
+engineSize: 0
+faceTarget: false
+weapons: [
+  {
+    name: mold-mold-floater-larvaspawn
+    x: 0
+    y: 2
+    mirror: false
+    reload: 60
+    rotate: false
+    shootSound: stepMud
+    shootSoundVolume: 1.45
+      bullet: {
+          type: BasicBulletType
+          speed: 2
+          lifetime: 2
+          pierce: false
+          splashDamage: 75
+          splashDamageRadius: 12
+          width: 28
+          height: 12
+          backColor: 00000000
+          frontColor: 00000000
+}
+    }
+]
