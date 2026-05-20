@@ -16,7 +16,7 @@ faceTarget: false
 weapons: [
   {
     x: 0
-    y: 2.5
+    y: 4
     mirror: false
     reload: 60
     rotate: false
@@ -25,7 +25,7 @@ weapons: [
       bullet: {
           type: BasicBulletType
           speed: 2
-          lifetime: 2
+          lifetime: 1
           pierce: false
           splashDamage: 75
           splashDamageRadius: 12
