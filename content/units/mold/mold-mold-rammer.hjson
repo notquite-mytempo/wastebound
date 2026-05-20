@@ -4,6 +4,7 @@ name: Mold Rammer
 description: A peculiar construct of The Mold that charges towards the target to pierce it with its sharp teeth.
 drawCell: false
 outlineColor: 0f1718
+circleTarget: true
 drag: 0.12
 accel: 0.09
 health: 460
