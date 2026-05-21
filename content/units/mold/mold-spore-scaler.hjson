@@ -3,6 +3,7 @@ name: Spore Scaler
 description: A brutal marvel of a moldy creature that scales terrain, always throwing out spores. Has an extra external mouth for ranged infestation spreading. Will spawn 5 of its Lesser Mold Construct offspring upon death.
 speed: 1
 health: 2500
+useUnitCap: false
 armor: 0
 flying: false
 legExtension: -1
