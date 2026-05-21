@@ -40,9 +40,9 @@ weapons: [
       splashDamage: 15
       splashDamageRadius: 32
       pierceDamageFactor: 0  
-      backColor: 161325
-      frontColor: 403354
-      trailColor: 161325
+      backColor: 7c588d
+      frontColor: ebd1f1
+      trailColor: 7c588d
       trailLength: 8
       trailWidth: 1.5
       hitEffect: flakExplosion
@@ -128,23 +128,19 @@ weapons: [
     shootSound: stepMud
     shootSoundVolume: 0.3
     rotate: false
-shoot:{
-shots: 4
-shotDelay: 3
-}
   
   
     bullet: {
       lifetime: 75
       speed: 2
       type: ArtilleryBulletType
-      width: 5
-      height: 13
+      width: 15
+      height: 15
       splashDamage: 50
       splashDamageRadius: 24
-      backColor: 161325
-      frontColor: 403354
-      trailColor: 161325
+      backColor: 7c588d
+      frontColor: ebd1f1
+      trailColor: 7c588d
       trailLength: 8
       trailWidth: 1.5
       bulletInterval: 15
@@ -153,16 +149,18 @@ shotDelay: 3
         type: BasicBulletType
         lifetime: 30
         damage: 4
-        frontColor: 403354
-        backColor: 161325
+        frontColor: ebd1f1
+        backColor: 7c588d
         speed: 2
         homingPower: 0.8
         homingDelay: 5
+        status: status-infested
+        statusDuration: 120
       }
       hitEffect: flakExplosion
       despawnEffect: blockExplosionSmoke
       status: status-infested
-      statusDuration: 60
+      statusDuration: 180
     }
 }
 ]
