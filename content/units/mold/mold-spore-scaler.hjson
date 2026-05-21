@@ -21,7 +21,7 @@ rotateSpeed: 3.5
 abilities:[
     {
     type: LiquidExplodeAbility
-    liquid: slag
+    liquid: mold-blood
     amount: 240
   }
     {
