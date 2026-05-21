@@ -54,8 +54,8 @@ weapons: [
   {
 // left side mouth 1
     mirror: false
-    x: -17
-    y: 10
+    x: -16
+    y: 9
 // reload is cool down between shots in ticks. One second is 60 ticks 
     reload: 15
     inaccuracy: 5
@@ -86,8 +86,8 @@ weapons: [
   {
 // right side mouth 1
     mirror: false
-    x: 17
-    y: 10
+    x: 16
+    y: 9
 // reload is cool down between shots in ticks. One second is 60 ticks 
     reload: 24
     inaccuracy: 3
@@ -111,6 +111,54 @@ weapons: [
       trailColor: 161325
       trailLength: 8
       trailWidth: 1.5
+      hitEffect: flakExplosion
+      despawnEffect: blockExplosionSmoke
+      status: status-infested
+      statusDuration: 60
+    }
+}
+{
+// middle mouth
+    mirror: false
+    x: -5
+    y: 0.5
+// reload is cool down between shots in ticks. One second is 60 ticks 
+    reload: 95
+    inaccuracy: 3
+    shootSound: stepMud
+    shootSoundVolume: 0.3
+    rotate: false
+shoot:{
+shots: 4
+shotDelay: 3
+}
+  
+  
+    bullet: {
+      lifetime: 75
+      speed: 2
+      type: ArtilleryBulletType
+      width: 5
+      height: 13
+      splashDamage: 50
+      splashDamageRadius: 24
+      backColor: 161325
+      frontColor: 403354
+      trailColor: 161325
+      trailLength: 8
+      trailWidth: 1.5
+      bulletInterval: 15
+      intervalBullets: 1
+      intervalBullet:{
+        type: BasicBulletType
+        lifetime: 30
+        damage: 4
+        frontColor: 403354
+        backColor: 161325
+        speed: 2
+        homingPower: 0.8
+        homingDelay: 5
+      }
       hitEffect: flakExplosion
       despawnEffect: blockExplosionSmoke
       status: status-infested
