@@ -1,6 +1,6 @@
 type: legs
 name: Spore Scaler
-description: A brutal marvel of a moldy creature that scales terrain, always throwing out spores. Has an extra external mouth for ranged infestation spreading.
+description: A brutal marvel of a moldy creature that scales terrain, always throwing out spores. Has an extra external mouth for ranged infestation spreading. Will spawn 5 of its Lesser Mold Construct offspring upon death.
 speed: 1
 health: 2500
 armor: 0
@@ -16,7 +16,23 @@ outlineColor: 0f1718
 hitSize: 24
 researchCostMultiplier: 1.5
 stepSound: walkerStepTiny
-rotateSpeed: 3.8
+drawCell: false
+rotateSpeed: 3.5
+abilities:[
+    {
+    type: LiquidExplodeAbility
+    liquid: slag
+    amount: 240
+  }
+    {
+    type: SpawnDeathAbility
+    amount: 5
+    faceOutwards: false
+    amount: 5
+    randAmount: 5
+    unit: mold-lesser-mold-construct
+  }
+]
 weapons: [
   {
 // change the weapon name to (your unit's name)-weapon 
@@ -59,7 +75,7 @@ weapons: [
 // reload is cool down between shots in ticks. One second is 60 ticks 
     reload: 15
     inaccuracy: 5
-    shootSound: stepMud
+    shootSound: shootDisperse
     rotate: false
   
   
@@ -67,8 +83,8 @@ weapons: [
       lifetime: 14
       speed: 4
       type: BasicBulletType
-      width: 7
-      height: 9
+      width: 4
+      height: 12
       splashDamage: 14
       splashDamageRadius: 12
       pierceDamageFactor: 0  
@@ -125,9 +141,10 @@ weapons: [
 // reload is cool down between shots in ticks. One second is 60 ticks 
     reload: 95
     inaccuracy: 3
-    shootSound: stepMud
+    shootSound: shootArtillerySap
     shootSoundVolume: 0.3
-    rotate: false
+    rotate: true
+    rotateSpeed: 60
   
   
     bullet: {
