@@ -5,6 +5,13 @@ speed: 0.8
 health: 80
 armor: 1
 flying: false
+useUnitCap: false
+abilities:[
+    {
+    type: LiquidExplodeAbility
+    liquid: mold-blood
+    amount: 5
+  }
 legExtension: -2.5
 legMoveSpace: 1.2
 hovering: false
