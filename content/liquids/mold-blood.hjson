@@ -1,0 +1,13 @@
+type: CellLiquid
+name: Mold Blood
+description: An organic liquid found in Mold creatures. Spreads aggressively on Toxic Water.
+coolant: false
+color: 493949
+colorFrom: 493949
+colorTo: 24202d
+canStayOn: [toxic-water]
+explosiveness: 0
+flammability: 0.1
+incinerable: true
+viscosity: 0.75
+spreadTarget: toxic-water
