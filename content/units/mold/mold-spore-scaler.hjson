@@ -35,9 +35,10 @@ weapons: [
       lifetime: 42
       speed: 4
       type: BasicBulletType
-      width: 13
-      height: 14
-      damage: 5
+      width: 22
+      height: 25
+      splashDamage: 15
+      splashDamageRadius: 32
       pierceDamageFactor: 0  
       backColor: 161325
       frontColor: 403354
@@ -68,8 +69,8 @@ weapons: [
       type: BasicBulletType
       width: 7
       height: 9
-      splashDamage: 5
-      splashDamageRadius: 14
+      splashDamage: 14
+      splashDamageRadius: 12
       pierceDamageFactor: 0  
       backColor: 161325
       frontColor: 403354
@@ -96,14 +97,15 @@ weapons: [
   
   
     bullet: {
-      lifetime: 10
+      lifetime: 13
       speed: 5
       type: BasicBulletType
       width: 5
       height: 13
-      damage: 12
+      damage: 45
       pierce: true
       pierceCap: 3
+      pierceBuildings: true
       backColor: 161325
       frontColor: 403354
       trailColor: 161325
