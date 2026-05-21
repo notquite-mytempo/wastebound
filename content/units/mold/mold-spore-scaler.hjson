@@ -1,7 +1,7 @@
 type: legs
 name: Spore Scaler
 description: A brutal marvel of a moldy creature that scales terrain, always throwing out spores. Has an extra external mouth for ranged infestation spreading.
-speed: 0.6
+speed: 1
 health: 2500
 armor: 0
 flying: false
@@ -10,23 +10,25 @@ legMoveSpace: 0.8
 hovering: false
 legCount: 5
 legLength: 54
-legSpeed: 0.5
+legSpeed: 0.6
 legForwardScl: 0.62
 outlineColor: 0f1718
 hitSize: 24
 researchCostMultiplier: 1.5
 stepSound: walkerStepTiny
+rotateSpeed: 3.8
 weapons: [
   {
 // change the weapon name to (your unit's name)-weapon 
     name: mold-spore-scaler-mouth
     mirror: false
-    x: -18
-    y: 1
+    x: -19
+    y: 2
 // reload is cool down between shots in ticks. One second is 60 ticks 
     reload: 60
     inaccuracy: 0
     shootSound: stepMud
+    rotate: true
   
   
     bullet: {
@@ -46,6 +48,71 @@ weapons: [
       despawnEffect: blockExplosionSmoke
       status: status-infested
       statusDuration: 160
+    }
+}
+  {
+// left side mouth 1
+    mirror: false
+    x: -17
+    y: 10
+// reload is cool down between shots in ticks. One second is 60 ticks 
+    reload: 15
+    inaccuracy: 5
+    shootSound: stepMud
+    rotate: false
+  
+  
+    bullet: {
+      lifetime: 14
+      speed: 4
+      type: BasicBulletType
+      width: 7
+      height: 9
+      splashDamage: 5
+      splashDamageRadius: 14
+      pierceDamageFactor: 0  
+      backColor: 161325
+      frontColor: 403354
+      trailColor: 161325
+      trailLength: 8
+      trailWidth: 1.5
+      hitEffect: flakExplosion
+      despawnEffect: blockExplosionSmoke
+      status: status-infested
+      statusDuration: 30
+    }
+}
+  {
+// right side mouth 1
+    mirror: false
+    x: 17
+    y: 10
+// reload is cool down between shots in ticks. One second is 60 ticks 
+    reload: 24
+    inaccuracy: 3
+    shootSound: stepMud
+    shootSoundVolume: 0.65
+    rotate: false
+  
+  
+    bullet: {
+      lifetime: 10
+      speed: 5
+      type: BasicBulletType
+      width: 5
+      height: 13
+      damage: 12
+      pierce: true
+      pierceCap: 3
+      backColor: 161325
+      frontColor: 403354
+      trailColor: 161325
+      trailLength: 8
+      trailWidth: 1.5
+      hitEffect: flakExplosion
+      despawnEffect: blockExplosionSmoke
+      status: status-infested
+      statusDuration: 60
     }
 }
 ]
