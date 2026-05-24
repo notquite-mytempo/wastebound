@@ -1,0 +1,9 @@
+name: Phlogiston
+description: An extremely flammable and powerful fuel that burns with a mighty fire.
+hardness: 2.5
+flammability: 4.5
+explosiveness: 2
+cost: 0.5
+research: bituminous-coal
+color: b66e39
+hiddenOnPlanets: [serpulo, erekir]
