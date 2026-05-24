@@ -11,6 +11,7 @@ abilities:[
     liquid: mold-blood
     amount: 30
   }
+]
 drag: 0.08
 accel: 0.09
 health: 240
