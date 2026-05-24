@@ -12,6 +12,7 @@ abilities:[
     liquid: mold-blood
     amount: 5
   }
+]
 legExtension: -2.5
 legMoveSpace: 1.2
 hovering: false
