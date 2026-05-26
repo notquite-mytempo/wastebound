@@ -2,7 +2,7 @@ type: GenericCrafter
 name: Phlogiston Synthesizer
 description: Compresses various compounds to produce a pure form of Phlogiston.
 size: 3
-health: 1200
+health: 600
 hasPower: true
 hasItems: true
 hasLiquids: true
@@ -28,7 +28,7 @@ consumes: {
   }
 }
 
-outputItem: phlogiston/1
+outputItem: phlogiston/4
 
 craftEffect: {
   type: MultiEffect
