@@ -24,8 +24,14 @@ abilities:[
       type: ShieldRegenFieldAbility
       radius: 48
       regen: 12
-      max: 1000
+      max: 600
       cooldown: 260
+    }
+    {
+      type: RepairFieldAbility
+      radius: 48
+      amount: 15
+      reload: 130
     }
     {
     type: LiquidExplodeAbility
