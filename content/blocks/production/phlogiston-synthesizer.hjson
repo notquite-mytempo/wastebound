@@ -49,7 +49,23 @@ craftEffect: {
     }
   ]
 }
-
+drawer: {
+  type: DrawMulti
+  drawers: [
+    {
+      type: DrawRegion
+      suffix: -bottom
+    }
+    {
+      type: DrawLiquidTile
+      drawLiquid: dichromate
+      padding: 3
+    }
+    {
+      type: DrawDefault
+    }
+  ]
+}
 category: crafting
 research: coke-furnace
   
