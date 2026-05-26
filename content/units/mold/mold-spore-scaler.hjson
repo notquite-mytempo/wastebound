@@ -21,6 +21,13 @@ drawCell: false
 rotateSpeed: 3.5
 abilities:[
     {
+      type: ShieldRegenFieldAbility
+      radius: 48
+      regen: 1
+      max: 1000
+      "cooldown": 260
+    }
+    {
     type: LiquidExplodeAbility
     liquid: mold-blood
     amount: 240
