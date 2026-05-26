@@ -1,0 +1,49 @@
+type: GenericCrafter
+name: Phlogiston Synthesizer
+description: Compresses various compounds to produce a pure form of Phlogiston.
+size: 3
+health: 1200
+hasPower: true
+hasItems: true
+hasLiquids: true
+craftTime: 120
+itemCapacity: 30
+liquidCapacity: 30
+
+consumes: {
+  power: 12
+  items: [
+    coke/3
+    sulphur/2
+  ]
+  liquid: {
+    liquid: dichromate
+    amount: 0.25
+  }
+}
+
+outputItem: phlogiston/1
+
+craftEffect: {
+  type: MultiEffect
+  effects: [
+    {
+      type: WaveEffect
+      color: ffa64d
+      sizeFrom: 0
+      sizeTo: 16
+      lifetime: 30
+    }
+    {
+      type: ParticleEffect
+      line: true
+      particles: 6
+      length: 20
+      color: ffa64d
+    }
+  ]
+}
+
+category: crafting
+research: coke-furnace
+  
