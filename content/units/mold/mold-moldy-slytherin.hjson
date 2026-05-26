@@ -1,6 +1,6 @@
 type: crawl
 name: Moldy Slytherin
-description: An obnoxious creature of the Mold that wiggles its way through the world, trying to reach a target to eventually explode.
+description: An obnoxious construct of the Mold that wiggles its way through the world, trying to reach a target to eventually explode.
 speed: 0.8
 hitSize: 5
 health: 80
