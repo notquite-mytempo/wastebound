@@ -2,9 +2,10 @@ type: crawl
 name: Spore Shaman
 description: This Mold construct is different from the others as it has a support role. Supplies allied creatures with shields and heals.
 speed: 0.9
-hitSize: 24
+hitSize: 18
 health: 1400
 outlineColor: 0f1718
+groundLayer: 60
 armor: 6
 abilities:[
     {
