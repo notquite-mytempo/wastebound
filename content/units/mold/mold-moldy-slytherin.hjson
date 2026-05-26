@@ -1,0 +1,40 @@
+type: crawl
+name: Moldy Slytherin
+description: An obnoxious creature of the Mold that wiggles its way through the world, trying to reach a target to eventually explode.
+speed: 0.8
+hitSize: 5
+health: 80
+armor: 0
+
+segments: 3
+segmentScl: 2
+segmentPhase: 2
+segmentMag: 0.5
+crawlEmitter: neoplasmTrail
+crawlEmitterChance: 0.08
+
+omni: false
+rotateSpeed: 2.5
+drawCell: false
+
+weapons: [
+  {
+    shootCone: 360
+    mirror: false
+    range: 10
+    bullet: {
+      type: BasicBulletType
+      collides: false
+      lifetime: 1
+      speed: 0
+      damage: 0
+      splashDamageRadius: 40
+      splashDamage: 60
+      scaledSplashDamage: true
+      knockback: 2
+      instantDissapear: true
+      killShooter: true
+      shootOnDeath: true
+    }
+  }
+]
