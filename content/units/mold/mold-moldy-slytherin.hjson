@@ -4,6 +4,7 @@ description: An obnoxious construct of the Mold that wiggles its way through the
 speed: 0.8
 hitSize: 5
 health: 200
+outlineColor: 0f1718
 armor: 0
 
 segments: 3
@@ -14,7 +15,7 @@ crawlEmitter: neoplasmTrail
 crawlEmitterChance: 0.08
 
 omni: false
-rotateSpeed: 2.5
+rotateSpeed: 5
 drawCell: false
 drawBody: false
 
