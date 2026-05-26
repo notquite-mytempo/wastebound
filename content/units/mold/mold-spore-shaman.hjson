@@ -1,0 +1,52 @@
+type: crawl
+name: Spore Shaman
+description: This Mold construct is different from the others as it has a support role. Supplies allied creatures with shields and heals.
+speed: 0.5
+hitSize: 24
+health: 1400
+outlineColor: 0f1718
+armor: 0
+
+segments: 4
+segmentScl: 12
+segmentPhase: 6
+segmentMag: 0.5
+crawlEmitter: neoplasmTrail
+crawlEmitterChance: 0.08
+
+omni: false
+rotateSpeed: 5
+drawCell: false
+drawBody: false
+
+weapons: [
+    {
+    mirror: false
+    x: 0
+    y: 8
+    reload: 75
+    inaccuracy: 0
+    shootSound: stepMud
+  
+  
+    bullet: {
+      lifetime: 35
+      speed: 3
+      type: BasicBulletType
+      width: 22
+      height: 25
+      splashDamage: 20
+      splashDamageRadius: 40
+      pierceDamageFactor: 0  
+      backColor: 161325
+      frontColor: 403354
+      trailColor: 161325
+      trailLength: 8
+      trailWidth: 1.5
+      hitEffect: flakExplosion
+      despawnEffect: blockExplosionSmoke
+      status: status-infested
+      statusDuration: 240
+    }
+}
+]
