@@ -3,11 +3,11 @@ name: Moldy Slytherin
 description: An obnoxious construct of the Mold that wiggles its way through the world, trying to reach a target to eventually explode.
 speed: 0.8
 hitSize: 5
-health: 80
+health: 200
 armor: 0
 
 segments: 3
-segmentScl: 2
+segmentScl: 4
 segmentPhase: 2
 segmentMag: 0.5
 crawlEmitter: neoplasmTrail
@@ -16,6 +16,7 @@ crawlEmitterChance: 0.08
 omni: false
 rotateSpeed: 2.5
 drawCell: false
+drawBody: false
 
 weapons: [
   {
