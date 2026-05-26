@@ -9,6 +9,12 @@ hasLiquids: true
 craftTime: 120
 itemCapacity: 30
 liquidCapacity: 30
+requirements:[
+  indium/450
+  cement/300
+  lithate/300
+  osmium/200
+]
 
 consumes: {
   power: 12
