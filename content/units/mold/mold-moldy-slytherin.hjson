@@ -1,3 +1,4 @@
+
 type: crawl
 name: Moldy Slytherin
 description: An obnoxious construct of the Mold that wiggles its way through the world, trying to reach a target to eventually explode.
@@ -18,7 +19,8 @@ omni: false
 rotateSpeed: 5
 drawCell: false
 drawBody: false
-
+shieldColor:494949
+healColor: 373737
 weapons: [
   {
     shootCone: 360
