@@ -4,8 +4,9 @@ name: Mold Rammer
 description: A peculiar construct of The Mold that charges towards the target to pierce it with its sharp teeth.
 drawCell: false
 outlineColor: 0f1718
-circleTarget: true
 useUnitCap: false
+shieldColor:494949
+healColor: 373737
 abilities:[
     {
     type: LiquidExplodeAbility
@@ -22,19 +23,178 @@ hitSize: 12
 flying: true
 engineSize: 0
 faceTarget: true
-circleTargetRadius: 19
+circleTarget: true
+circleTargetRadius: 6
 rotateSpeed: 8
 weapons: [
   {
+    name:mold-mold-rammer-mouth
     x: 0
-    y: 4
+    y: 9.5
     mirror: false
-    reload: 45
-    rotate: true
-    rotateSpeed: 60
+    reload: 35
+    rotate: false
     shootSound: explosionCleroi
     shootEffect: shootSmokeSquare
     shootColor: ffffff3e
+    shootSoundVolume: 1.45
+    parts: [
+        {
+        type: RegionPart
+        suffix: -left
+        progress: smoothReload
+        x: -6.5
+        y: 0
+        xScl: 1
+        yScl: 1
+        layerOffset: 0
+        moveRot: -12
+        moveX:0.75
+        moveY:1
+        outline: false
+        }
+        {
+        type: RegionPart
+        suffix: -right
+        progress: smoothReload
+        x: 8
+        y: 0.25
+        xScl: 1
+        yScl: 1
+        layerOffset: 0
+        moveRot: 12
+        moveX:-1
+        moveY:0.25
+        outline: false
+        }
+      ]
+      bullet: {
+          type: BasicBulletType
+          speed: 2
+          lifetime: 1
+          pierce: false
+          damage:12
+          splashDamage: 45
+          splashDamageRadius: 12
+          width: 28
+          height: 12
+          backColor: 00000000
+          frontColor: 00000000
+          hitEffect:[
+          {
+              type: ParticleEffect
+              lifetime: 17
+              particles: 5
+              layer: 100.2
+              cone: 120
+
+              sizeFrom: 3
+              sizeTo: 0
+              length: 14
+
+              colorFrom: 494949
+              colorTo: 494949
+          }
+          {
+            type: ParticleEffect
+            lifetime: 23
+            particles: 2
+            layer: 100.1
+            cone: 170
+
+            sizeFrom: 2
+            sizeTo: 5
+            length: 6
+
+            colorFrom: 262626
+            colorTo: 26262600
+          }
+          ]
+          despawnEffect:none
+          shootEffect:none
+          hitColor: 4f385c
+          hitSound: shootEnergyField
+}
+    }
+  {
+  //wing R 1
+  x: 0
+  y: 0
+  //somehow, parts do not work without this useless sprite
+  name: rammer-deco
+  mirror: false
+  recoil: 0
+  reload: 12
+  alwaysShooting: true
+  shootSound: none
+  rotate: false
+  parts: [
+    {
+    type: RegionPart
+    suffix: -wing
+    progress: smoothReload
+    x: 6
+    y: 0
+    xScl: 1.25
+    yScl: 1.25
+    layerOffset:-0.01
+    rotation: -12
+    moveRot: 12
+    outline: false
+    }
+  ]
+  bullet: {
+    type: BulletType
+    speed: 0
+    lifetime: 0
+    collides: false
+    damage: 0
+    despawnEffect: none
+    smokeEffect: none
+    hitEffect: none
+    shootEffect: none
+    }
+  }
+{
+  //wing L 1
+  x: 0
+  y: 0
+  //somehow, parts do not work without this useless sprite
+  name: rammer-deco
+  mirror: false
+  recoil: 0
+  reload: 12
+  alwaysShooting: true
+  shootSound: none
+  rotate: false
+  parts: [
+    {
+    type: RegionPart
+    suffix: -wing
+    progress: smoothReload
+    x: -6
+    y: 0
+    xScl: -1.25
+    yScl: -1.25
+    rotation: -12
+    layerOffset:-0.01
+    moveRot: 12
+    outline: false
+    }
+  ]
+  bullet: {
+    type: BulletType
+    speed: 0
+    lifetime: 0
+    collides: false
+    damage: 0
+    despawnEffect: none
+    smokeEffect: none
+    hitEffect: none
+    shootEffect: none
+    }
+  }
+]    shootColor: ffffff3e
     shootSoundVolume: 1.45
       bullet: {
           type: BasicBulletType
