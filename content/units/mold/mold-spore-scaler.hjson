@@ -20,6 +20,8 @@ researchCostMultiplier: 1.5
 stepSound: walkerStepTiny
 drawCell: false
 rotateSpeed: 3.5
+shieldColor:494949
+healColor: 373737
 abilities:[
     {
       type: RepairFieldAbility
@@ -31,10 +33,347 @@ abilities:[
     type: LiquidExplodeAbility
     liquid: mold-blood
     amount: 240
-  }
+    }
     {
     type: SpawnDeathAbility
     amount: 5
+    faceOutwards: false
+    amount: 5
+    randAmount: 5
+    unit: mold-lesser-mold-construct
+    }
+]
+weapons: [
+  {
+// change the weapon name to (your unit's name)-weapon 
+    name: mold-spore-scaler-mouth
+    mirror: false
+    x: -20
+    y: 2
+// reload is cool down between shots in ticks. One second is 60 ticks 
+    reload: 60
+    inaccuracy: 0
+    shootSound: stepMud
+    rotate: true
+    rotateSpeed:2.1
+  
+    bullet: {
+      lifetime: 42
+      speed: 4
+      type: BasicBulletType
+      width: 12
+      height: 25
+      splashDamage: 15
+      splashDamageRadius: 32
+      backColor: 7c588d
+      frontColor: ebd1f1
+      trailColor: 7c588d
+      trailLength: 12
+      trailWidth: 1.7
+      hitEffect: [{
+        type: ParticleEffect
+        lifetime: 15
+        particles: 2
+        layer: 100.0
+        cone: 360
+
+        sizeFrom: 2
+        sizeTo: 0
+        length: 24
+        randLength:false
+
+        colorFrom: ebd1f1
+        colorTo: ebd1f1
+      }
+      {
+        type: WaveEffect
+        lifetime: 13
+
+        sizeFrom: 0
+        sizeTo: 24
+
+        strokeFrom: 2
+        strokeTo: 0
+
+        colorFrom: ebd1f1
+        colorTo: 7c588d
+      }]
+      despawnEffect: [{
+        type: ParticleEffect
+        lifetime: 15
+        particles: 2
+        layer: 100.0
+        cone: 360
+        sizeFrom: 2
+        sizeTo: 0
+        length: 24
+        randLength:false
+
+        colorFrom: ebd1f1
+        colorTo: ebd1f1
+      }
+      {
+        type: WaveEffect
+        lifetime: 13
+
+        sizeFrom: 0
+        sizeTo: 24
+
+        strokeFrom: 2
+        strokeTo: 0
+
+        colorFrom: ebd1f1
+        colorTo: 7c588d
+      }]
+      status: status-infested
+      shootEffect:none
+      statusDuration: 160
+    }
+}
+  {
+// left side mouth 1
+    mirror: false
+    x: -11.5
+    y: 4.75
+    baseRotation:15
+    shootCone:120
+    rotationLimit:10
+// reload is cool down between shots in ticks. One second is 60 ticks 
+    reload: 23
+    inaccuracy: 5
+    shootSound: shootDisperse
+    rotate: true
+    shoot: {
+    type: ShootPattern
+        shots: 3
+        shotDelay: 10
+    }
+    bullet: {
+      lifetime: 21
+      speed: 6
+      drag:0.04
+      type: BasicBulletType
+      width: 4
+      height: 12
+      splashDamage: 14
+      splashDamageRadius: 12
+      pierceDamageFactor: 0  
+      backColor: 161325
+      frontColor: 403354
+      trailColor: 161325
+      trailLength: 8
+      trailWidth: 1.5
+      weaveMag:5
+      weaveScale:0.75
+      homingPower:0.03
+      homingRange: 60
+      homingDelay:5
+      despawnEffect: [{
+            type: ParticleEffect
+            lifetime: 15
+            particles: 2
+            layer: 100.0
+            cone: 360
+
+            sizeFrom: 2
+            sizeTo: 0
+            length: 7
+            randLength:false
+
+            colorFrom: 161325
+            colorTo: 161325
+        }
+        {
+            type: WaveEffect
+            lifetime: 13
+
+            sizeFrom: 0
+            sizeTo: 12
+
+            strokeFrom: 2
+            strokeTo: 0
+
+            colorFrom: 403354
+            colorTo: 161325
+        }]
+      hitEffect: none
+      status: status-infested
+      shootEffect:none
+      statusDuration: 30
+    }
+}
+  {
+// right side mouth 1
+    mirror: false
+    x: 12.5
+    y: 5.5
+// reload is cool down between shots in ticks. One second is 60 ticks 
+    reload: 24
+    inaccuracy: 3
+    baseRotation:-15
+    shootCone:120
+    rotationLimit:10
+    shootSound: stepMud
+    shootSoundVolume: 0.65
+    rotate: false
+    shoot: {
+        type: ShootSpread
+        spread: 2
+        shots: 2
+    }
+    bullet: {
+      sprite:large-orb
+      lifetime: 32
+      speed: 4
+      drag:0.012
+      type: BasicBulletType
+      width: 5
+      height: 13
+      damage: 45
+      weaveMag:5
+      weaveScale:1
+      homingPower:0.015
+      homingRange: 60
+      homingDelay:5
+      pierce: true
+      pierceCap: 3
+      pierceBuildings: true
+      backColor: 161325
+      frontColor: 403354
+      trailColor: 161325
+      trailLength: 8
+      trailWidth: 1.5
+      hitEffect: none
+      despawnEffect: [{
+          type: ParticleEffect
+          lifetime: 15
+          particles: 2
+          layer: 100.0
+          cone: 360
+
+          sizeFrom: 2
+          sizeTo: 0
+          length: 7
+          randLength:false
+
+          colorFrom: 161325
+          colorTo: 161325
+      }
+      {
+          type: WaveEffect
+          lifetime: 13
+
+          sizeFrom: 0
+          sizeTo: 12
+
+          strokeFrom: 2
+          strokeTo: 0
+
+          colorFrom: 403354
+          colorTo: 161325
+      }]
+      status: status-infested
+      shootEffect:none
+      statusDuration: 60
+    }
+}
+{
+// middle mouth
+    mirror: false
+    x: -5.5
+    y: -6
+// reload is cool down between shots in ticks. One second is 60 ticks 
+    reload: 240
+    inaccuracy: 20
+    shootSound: shootArtillerySap
+    shootSoundVolume: 0.3
+    shootCone:360
+    rotate: true
+    rotateSpeed: 60
+    velocityRnd:0.2
+    shoot: {
+    type: ShootMulti
+    source: {
+       type: ShootSpread
+       spread: 2
+       shots: 2
+       }
+    dest: [
+    {
+            type: ShootMulti
+            source: {
+               type: ShootSpread
+               shots: 3
+               spread: 5
+               }
+            dest: [
+            {
+            type: ShootPattern
+                firstShotDelay: 20
+                shots: 3
+                shotDelay: 10
+            }
+            ]
+    }
+    ]
+    }
+    bullet: {
+      lifeScaleRandMin:0.6
+      lifetime: 75
+      speed: 3
+      drag:0.012
+      type: ArtilleryBulletType
+      sprite:large-orb
+      width: 9
+      height: 11
+      homingPower:0.012
+      homingRange:120
+      homingDelay:12
+      splashDamage: 50
+      splashDamageRadius: 24
+      backColor: 7c588d
+      frontColor: ebd1f1
+      trailColor: 7c588d
+      trailLength: 8
+      trailWidth: 1.5
+      weaveMag:3
+      weaveScale:1
+      trailEffect: none
+      hitEffect: [{
+         type: ParticleEffect
+         lifetime: 15
+         particles: 2
+         layer: 100.0
+         cone: 360
+
+         sizeFrom: 2
+         sizeTo: 0
+         length: 24
+         randLength:false
+
+         colorFrom: ebd1f1
+         colorTo: ebd1f1
+         }
+         {
+         type: WaveEffect
+         lifetime: 13
+
+         sizeFrom: 0
+         sizeTo: 24
+
+         strokeFrom: 2
+         strokeTo: 0
+
+         colorFrom: ebd1f1
+         colorTo: 7c588d
+      }]
+      despawnEffect: none
+      status: status-infested
+      shootEffect:none
+      statusDuration: 180
+    }
+}
+]    amount: 5
     faceOutwards: false
     amount: 5
     randAmount: 5
