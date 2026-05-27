@@ -7,6 +7,8 @@ health: 1400
 outlineColor: 0f1718
 groundLayer: 60
 armor: 6
+shieldColor:494949
+healColor: 373737
 abilities:[
     {
       type: ShieldArcAbility
@@ -16,6 +18,7 @@ abilities:[
       angle: 65
       width: 6
       chanceDeflect: 0.1
+      color: 49494990
     }
     {
       type: ShieldRegenFieldAbility
@@ -23,12 +26,132 @@ abilities:[
       regen: 12
       max: 120
       cooldown: 260
+      activeEffect:[{
+        type: ParticleEffect
+        lifetime: 36
+        particles: 26
+        layer: 100.1
+        cone: 360
+
+        sizeFrom: 3
+        sizeTo:0
+        length: 52
+        randLength:false
+
+        colorFrom: 2A2965
+        colorTo: 2A2965
+      }
+      {
+        type: ParticleEffect
+        startDelay:1
+        lifetime: 36
+        particles: 6
+        layer: 100.0
+        cone: 360
+
+        sizeFrom: 3
+        sizeTo: 5
+        length: 57
+        randLength:false
+
+        colorFrom: 2A2965
+        colorTo: 2A296500
+      }
+      {
+        type: WaveEffect
+        rotWithParent: true
+        followParent: true
+        lifetime: 36
+
+        sizeFrom: 0
+        sizeTo: 52
+
+        strokeFrom: 5
+        strokeTo: 0
+
+        colorFrom: 2A2965
+        colorTo: 2A2965
+      }
+      ]
+      applyEffect:{
+        type: ParticleEffect
+        lifetime: 30
+        particles: 5
+        layer: 100.3
+        cone: 360
+        baseLength: 12
+        sizeFrom: 4
+        sizeTo: 1
+        length: -7
+
+        colorFrom: 2A2965
+        colorTo: 2A2965
+        }
     }
     {
       type: RepairFieldAbility
       radius: 48
       amount: 15
       reload: 130
+      activeEffect:[{
+          type: ParticleEffect
+          lifetime: 36
+          particles: 26
+          layer: 100.1
+          cone: 360
+
+          sizeFrom: 3
+          sizeTo:0
+          length: 52
+          randLength:false
+
+          colorFrom: 37373750
+          colorTo: 37373750
+        }
+        {
+          type: ParticleEffect
+          startDelay:1
+          lifetime: 36
+          particles: 12
+          layer: 100.0
+          cone: 360
+
+          sizeFrom: 3
+          sizeTo: 5
+          length: 57
+          randLength:false
+
+          colorFrom: 37373750
+          colorTo: 37373700
+        }
+        {
+          type: WaveEffect
+          rotWithParent: true
+          followParent: true
+          lifetime: 36
+
+          sizeFrom: 0
+          sizeTo: 52
+
+          strokeFrom: 5
+          strokeTo: 0
+
+          colorFrom: 37373750
+          colorTo: 37373750
+        }
+        ]
+        healEffect:{
+          type: ParticleEffect
+          lifetime: 30
+          particles: 12
+          layer: 100.3
+          cone: 360
+          sizeFrom: 4
+          sizeTo: 1
+          length: 6
+          colorFrom: 373737
+          colorTo: 373737
+          }
     }
     {
     type: LiquidExplodeAbility
@@ -50,7 +173,6 @@ segmentPhase: 6
 segmentMag: 0.5
 crawlEmitter: neoplasmTrail
 crawlEmitterChance: 0.08
-
 omni: false
 rotateSpeed: 3
 drawCell: false
@@ -64,24 +186,51 @@ weapons: [
     reload: 75
     inaccuracy: 0
     shootSound: stepMud
-  
-  
+
     bullet: {
       lifetime: 35
       speed: 3
       type: BasicBulletType
-      width: 22
+      width: 17
       height: 25
       splashDamage: 20
       splashDamageRadius: 40
-      pierceDamageFactor: 0  
-      backColor: 161325
-      frontColor: 403354
-      trailColor: 161325
-      trailLength: 8
-      trailWidth: 1.5
-      hitEffect: flakExplosion
-      despawnEffect: blockExplosionSmoke
+      backColor: 373737
+      frontColor: 494949
+      trailColor: 373737
+      trailLength: 12
+      trailWidth: 3.7
+      hitEffect: [
+        {
+            type: ParticleEffect
+            lifetime: 36
+            particles: 14
+            layer: 100.0
+            cone: 360
+
+            sizeFrom: 3
+            sizeTo: 0
+            length: 40
+            randLength:false
+
+            colorFrom: 494949
+            colorTo: 494949
+        }
+        {
+            type: WaveEffect
+            lifetime: 36
+
+            sizeFrom: 0
+            sizeTo: 40
+
+            strokeFrom: 3
+            strokeTo: 0
+
+            colorFrom: 373737
+            colorTo: 373737
+        }
+        ]
+      despawnEffect: none
       status: status-infested
       statusDuration: 240
     }
