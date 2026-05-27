@@ -211,7 +211,7 @@ weapons: [
           hitColor: 4f385c
           hitSound: shootEnergyField
 }
-    }
+    
   {
   //wing R 1
   x: 0
