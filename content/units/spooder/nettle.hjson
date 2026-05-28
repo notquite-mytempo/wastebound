@@ -34,23 +34,102 @@ weapons: [
         minWarmup : 0.05
   
     bullet: {
-      lifetime: 9
-      speed: 7
-      type: BasicBulletType
-      width: 7
-      height: 8
-      damage: 9
-      pierceDamageFactor: 0
-// this makes it home in slightly after ¼ of a second  
-      homingDelay: 15
-      homingPower: 0.3
-      backColor: 855c4e
-      frontColor: efccbf
-      trailColor: 855c4e
-      trailLength: 8
-      trailWidth: 1.5
-      hitEffect: flakExplosion
-      despawnEffect: blockExplosionSmoke
+        lifetime: 9
+        speed: 7
+        type: BasicBulletType
+        width: 7
+        height: 8
+        damage: 4
+        pierceDamageFactor: 0
+        homingDelay: 15
+        homingPower: 0.012
+        backColor: 855c4e
+        frontColor: efccbf
+        trailColor: 855c4e
+        trailLength: 8
+        trailWidth: 1.5
+        hitEffect: {
+           type: WaveEffect
+           lifetime: 14
+           sizeFrom: 0
+           sizeTo: 8
+           strokeFrom: 3
+           strokeTo: 0
+           colorFrom: 855c4e
+           colorTo: 855c4e
+        }
+        despawnEffect: none
+        fragBullets:1
+        fragBullet:{
+        width: 0
+        collideTiles:true
+        shrinkX:0
+        shrinkY:0
+        height: 0
+        lifetime: 3
+        speed:1
+        drag:0.04
+        sticky:true
+        damage:0
+        hitEffect:none
+        despawnEffect:none
+        stickyExtraLifetime:600
+        intervalBullets:1
+        intervalDelay:60
+        bulletInterval:120
+        intervalRandomSpread:0
+        intervalBullet:{
+            speed:0
+            width: 6
+            collides:false
+            hitSize: 2
+            height: 8
+            lifetime: 0
+            damage:1
+            velocityScaleRandMin:0.2
+            velocityScaleRandMax:1.6
+            lifeScaleRandMin:0.3
+            pierceArmor:true
+            splashDamage:3
+            splashDamageRadius:9
+            hitEffect:none
+            despawnEffect:[
+            {
+                type: RadialEffect
+                rotationOffset:  4
+                rotationSpacing : 24
+                amount: 15
+                lengthOffset:  12
+                effect: {
+                    type: ParticleEffect
+                    startDelay:5
+                    lifetime: 10
+                    particles: 1
+                    line: true
+                    cone: 2
+                    baseRotation: 90
+                    length: 20
+                    useRotation:false
+                    strokeFrom: 1
+                    strokeTo: 1
+                    interp: circleOut
+                    colorFrom: efccbf30
+                    colorTo: efccbf00
+                    }
+                }
+                {
+                   type: WaveEffect
+                   lifetime: 14
+                   sizeFrom: 13
+                   sizeTo: 9
+                   strokeFrom: 2
+                   strokeTo: 0
+                   colorFrom: 855c4e40
+                   colorTo: 855c4e40
+                }
+            ]
+        }
+    }
     }
 }
 ]
