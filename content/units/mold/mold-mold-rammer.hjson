@@ -193,7 +193,7 @@ weapons: [
     hitEffect: none
     shootEffect: none
     }
-  }
+  
 ]    shootColor: ffffff3e
     shootSoundVolume: 1.45
       bullet: {
