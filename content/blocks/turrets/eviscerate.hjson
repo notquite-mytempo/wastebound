@@ -1,0 +1,42 @@
+type: ItemTurret
+name: Eviscerate
+description: Fires one massive missile that violently detonates on impact.
+size: 5
+category: turret
+research: {
+  parent: refract
+  requirements: [
+    indium/9000
+    cement/8000
+    lithate/6000
+    osmium/5000
+    chromium/4000
+  ]
+}
+shootSound: shootArtillery
+shootSoundVolume: 2
+requirements: [
+  indium/450
+  cement/300
+  osmium/250
+  lithate/225
+  chromium/200
+]
+coolant: {
+  type: ConsumeCoolant
+  allowGas: true
+  allowLiquid: true
+  amount: 0.5
+}
+outlineColor: 0f1718
+targetAir: false
+targetGround: true
+reload: 180
+range: 340
+ammoTypes:[
+  phlogiston:{
+    spawnUnit: eviscerate-missile-phlogiston
+    instantDisappear: true
+    damage: 0
+  }
+]
