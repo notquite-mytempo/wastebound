@@ -54,13 +54,14 @@ weapons: [
     mirror: true
     
     alternate: true
-    reload: 30
+    reload: 45
     rotate: true
     shootSound: shootMissile
-    inaccuracy: 40
+    inaccuracy: 15
+    velocityRnd:0.2
     shoot: {
-      shots: 2
-      shotDelay: 5
+      shots: 3
+      shotDelay: 3
     }
     bullet: {
       type: MissileBulletType
@@ -68,12 +69,14 @@ weapons: [
       speed: 3
       lifetime: 35
       homingDelay: 5
-      homingPower: 0.8
+      homingPower: 0.012
+      homingRange: 30
       damage: 6
       width: 4
       height: 6
       trailWidth: 1
       trailLength: 4
+      trailEffect:none
       pierce: false
       shrinkX: 0
       shrinkY: 0
@@ -82,8 +85,9 @@ weapons: [
     {
     x: -2.4
     y: 0.5
-    mirror: false
+    mirror: true
     name: float-lazer-l
+    alternate:false
     continuous: true
     alwaysContinuous: true
     rotate: true
@@ -96,37 +100,7 @@ weapons: [
       collidesAir: true
       collidesGround: true
       type: ContinuousFlameBulletType
-      colors: [b788d5, bf64ec, a0bcf5, d3fefe, ffffff]
-      length: 40
-      width: 1
-      drawFlare: false
-      damageInterval: 15
-      damage: 7
-    
-      pierceArmor: true
-      pierceCap: 1
-      hitEffect: none
-      despawnEffect: none
-    }
-}
-    {
-    x: 2.4
-    y: 0.5
-    mirror: false
-    name: float-lazer-r
-    continuous: true
-    alwaysContinuous: true
-    rotate: true
-    ejectEffect: none
-    shootSound: beamHeal
-    shootY: 0.5
-    bullet: {
-      collides: true
-      collidesTiles: true
-      collidesAir: true
-      collidesGround: true
-      type: ContinuousFlameBulletType
-      colors: [b788d5, bf64ec, a0bcf5, d3fefe, ffffff]
+      colors: [b788d550, bf64ec60, a0bcf570, d3fefe90, ffffff]
       length: 40
       width: 1
       drawFlare: false
