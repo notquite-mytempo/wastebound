@@ -58,7 +58,7 @@ weapons: [
     rotate: true
     shootSound: shootMissile
     inaccuracy: 10
-    VelocityRnd:0.2
+    velocityRnd:0.2
     shoot: {
     type: ShootMulti
     source: {
