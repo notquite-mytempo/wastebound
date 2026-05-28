@@ -2,6 +2,76 @@ type: ConsumeGenerator
 name: Bituminous Burner
 description: Burns flammable materials to create power.
 size: 2
+generateEffectRange:3.5
+effectChance:0.12
+generateEffect:[
+{
+type: RadialEffect
+rotationOffset:  4
+rotationSpacing : 72
+amount: 5
+lengthOffset:  0.4
+effect: {
+  type: ParticleEffect
+  startDelay:5
+  lifetime: 60
+  particles: 1
+  line: true
+  cone: 2
+  baseRotation: 85
+  length: 12
+  useRotation:false
+  strokeFrom: 1
+  strokeTo: 1
+  interp: pow5Out
+  colorFrom: b788d590
+  colorTo: b788d500
+  }
+}
+{
+type: ParticleEffect
+startDelay:7
+lifetime: 360
+particles: 1
+cone: 12
+baseRotation: 72
+length: 100
+useRotation:false
+sizeFrom: 1
+sizeTo: 2
+interp: pow3Out
+colorFrom: b788d580
+colorTo: b788d500
+}
+{
+type: ParticleEffect
+startDelay:3
+lifetime: 320
+particles: 3
+cone: 5
+baseRotation: 74
+length: 92
+useRotation:false
+sizeFrom: 1
+sizeTo: 3
+interp: pow3Out
+colorFrom: b788d560
+colorTo: b788d500
+}
+{
+type: ParticleEffect
+startDelay:0
+lifetime: 30
+particles: 1
+cone: 0
+length: 0
+useRotation:false
+sizeFrom: 2
+sizeTo: 0
+colorFrom: ffffff
+colorTo: b788d5
+}
+]
 category: power
 research: {
   parent: core-flux
@@ -22,7 +92,6 @@ consumes: {
 }
 powerProduction: 0.8
 itemDuration: 120
-generateEffect: generatespark
 ambientSound: smelter
 ambientSoundVolume: 0.03
 drawer: {
@@ -34,6 +103,16 @@ drawer: {
     }
     {
       type: DrawCrucibleFlame
+      particles:120
+      particleLife:120
+      rotateScl:0.7
+      particleSize:3.2
+      flameRadiusMag:0.4
+      flameRadiusScl:3
+      particleRad:7.6
+      fadeMargin:0.35
+      flameColor: b788d5
+      midColor: d3fefe
     }
     {
       type: DrawDefault
