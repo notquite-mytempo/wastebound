@@ -7,6 +7,7 @@ shadowElevation: 0.1
 mechFrontSway: 0
 mechSideSway: 0
 mechStride: 0
+faceTarget: true
 drag: 0.1
 outlineColor: 0f1718
 speed: 1.25
@@ -52,28 +53,40 @@ weapons: [
     y: 0
     name: value-pew
     mirror: true
-    
     alternate: true
     reload: 30
     rotate: true
     shootSound: shootMissile
-    inaccuracy: 40
+    inaccuracy: 10
+    VelocityRnd:0.2
     shoot: {
-      shots: 4
-      shotDelay: 5
+    type: ShootMulti
+    source: {
+       type: ShootSpread
+       spread: 30
+       shots: 2
+       }
+    dest: [
+    {
+        type: ShootPattern
+        shots: 2
+        shotDelay: 20
+    }
+    ]
     }
     bullet: {
       type: MissileBulletType
-    
       speed: 2.5
       lifetime: 50
-      homingDelay: 5
-      homingPower: 0.8
+      homingDelay: 6
+      homingPower: 0.023
+      homingRange:40
       damage: 8
       width: 6
       height: 9
-      trailWidth: 1
-      trailLength: 4.4
+      trailWidth: 1.4
+      trailLength: 7
+      trailEffect:none
       pierce: false
       shrinkX: 0
       shrinkY: 0
@@ -87,18 +100,17 @@ weapons: [
     shootY: -1
     continuous: true
     alwaysContinuous: true
-    rotate: true
+    rotate: false
     ejectEffect: none
     shootSound: beamHeal
     bullet: {
       collides: true
-      collidesTiles: true
       collidesAir: true
       collidesGround: true
       type: ContinuousFlameBulletType
-      colors: [b788d5, bf64ec, a0bcf5, d3fefe, ffffff]
+      colors: [b788d580, bf64ec90, a0bcf5, d3fefe, ffffff]
       length: 45
-      width: 2.5
+      width: 1.8
       drawFlare: false
       damageInterval: 15
       damage: 15
