@@ -33,10 +33,10 @@ targetAir: false
 targetGround: true
 reload: 180
 range: 340
-ammoTypes:[
+ammoTypes:{
   phlogiston:{
     spawnUnit: eviscerate-missile-phlogiston
     instantDisappear: true
     damage: 0
   }
-]
+}
