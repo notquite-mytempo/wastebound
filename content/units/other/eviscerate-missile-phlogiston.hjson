@@ -55,6 +55,24 @@ weapons: [
       ammoMultiplier: 3
       fragBullets: 8
       velocityRnd: 0.3
+      intervalBullets: 2
+bulletInterval: 6
+intervalRandomSpread: 20
+intervalAngle: 180
+intervalSpread: 300
+intervalBullet:{
+  width: 5
+  height: 9
+  trailWidth: 1.8
+  trailLength: 9
+  lifetime: 30
+  speed: 3
+  homingDelay: 0.5
+  homingPower: 0.9
+  pierce: true
+  pierceCap: 2
+  pierceBuilding: true
+}
       fragBullet: {
         type: BasicBulletType
         width: 6
