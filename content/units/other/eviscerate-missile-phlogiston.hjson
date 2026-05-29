@@ -1,12 +1,13 @@
 type: missile
 template: MissileUnitType
 flying: true
-speed: 2
+speed: 6
+missileAccelTime:12
 useUnitCap: false
 physics: false
-lifetime: 170
+lifetime:73
 rotateSpeed: 0.2
-trailLength: 15
+trailLength: 12
 autoFindTarget: false
 homingDelay: 0
 circleTarget: false
@@ -40,50 +41,77 @@ abilities: [
 ]
 
 weapons: [
-  {
+{
+reload: 3
+x:0
+y:0
+mirror:false
+baseRotation:180
+rotate:false
+alwaysShooting: true
+shoot:{
+    type: ShootSpread
+    firstShotDelay: 15
+    shots: 2
+    spread: 40
+}
+velocityRnd:0.7
+bullet:{
+    width: 5
+    keepVelocity:false
+    height: 9
+    trailWidth: 1
+    trailLength: 4
+    backColor: 855c4e
+    frontColor: efccbf
+    trailColor: 855c4e
+    lifetime: 35
+    speed: 2.5
+    drag:0.03
+    homingRange:20
+    homingPower: 0.02
+    pierce: true
+    pierceCap: 2
+    pierceBuilding: true
+    shootEffect:none
+    shootSmoke:none
+}
+}
+{
     reload: 1
     shootOnDeath: true
     mirror: true
     shootCone: 360
     shake: 1
     bullet: {
-      type: ExplosionBulletType
-      splashDamage: 550
-      splashDamageRadius: 240
-      hitEffect: hitSquaresColor
-      hitColor: 583b5a
-      ammoMultiplier: 3
-      fragBullets: 8
-      velocityRnd: 0.3
-      intervalBullets: 2
-bulletInterval: 6
-intervalRandomSpread: 20
-intervalAngle: 180
-intervalSpread: 300
-intervalBullet:{
-  width: 5
-  height: 9
-  trailWidth: 1.8
-  trailLength: 9
-  lifetime: 30
-  speed: 3
-  homingDelay: 0.5
-  homingPower: 0.9
-  pierce: true
-  pierceCap: 2
-  pierceBuilding: true
-}
-      fragBullet: {
-        type: BasicBulletType
-        width: 6
-        height: 9
-        speed: 2
-        damage: 15
-        shrinkX: 0
-        shrinkY: 0
-        pierce: false
-        lifetime: 20
-      }
+        type: ExplosionBulletType
+        splashDamage: 340
+        splashDamageRadius: 60
+        hitEffect: hitSquaresColor
+        hitColor: 583b5a
+        fragRandomSpread:37
+        fragBullets:12
+        fragVelocityMin:0.7
+        fragVelocityMax:1.4
+        fragLifeMin:0.4
+        fragLifeMax:1.5
+        fragBullet: {
+            type: BasicBulletType
+            width: 7
+            height: 12
+            speed: 7
+            drag:0.05
+            damage: 15
+            shrinkX: 0
+            backColor: 855c4e
+            frontColor: efccbf
+            trailColor: 855c4e
+            trailLength:12
+            trailWidth:1.2
+            shrinkY: 0
+            pierce: false
+            lifetime: 20
+        }
     }
   } 
 ]
