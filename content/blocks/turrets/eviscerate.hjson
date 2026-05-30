@@ -33,6 +33,7 @@ targetAir: false
 targetGround: true
 reload: 180
 range: 340
+predictTarget: false
 intervalBullets: 2
 bulletInterval: 6
 intervalRandomSpread: 20
