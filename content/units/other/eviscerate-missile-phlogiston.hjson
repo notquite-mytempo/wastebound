@@ -28,6 +28,7 @@ abilities: [
     type: MoveEffectAbility
     interval: 2.5
     effect: {
+      offsetY: -3
       type: ParticleEffect
       particles: 24
       length: 2
@@ -38,6 +39,7 @@ abilities: [
       strokeTo: 0.4
       colorFrom: e5ac81
       colorTo: 553c2a
+      cone: 30
     }
     rotateEffect: true
   }
