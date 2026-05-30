@@ -10,6 +10,7 @@ rotateSpeed: 0.2
 trailLength: 12
 autoFindTarget: false
 homingDelay: 0
+homingPower: 0.6
 circleTarget: false
 faceTarget: true
 loopSound: none
@@ -28,13 +29,13 @@ abilities: [
     interval: 4
     effect: {
       type: ParticleEffect
-      particles: 12
+      particles: 24
       length: 2
       baseLength: 1.6
-      strokeFrom: 1.3
+      strokeFrom: 4.2
       strokeTo: 0.4
-      colorFrom: 583b5a
-      colorTo: 231d3223
+      colorFrom: e5ac81
+      colorTo: 553c2a
     }
     rotateEffect: true
   }
