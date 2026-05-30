@@ -7,15 +7,16 @@ useUnitCap: false
 physics: false
 lifetime:73
 rotateSpeed: 0.2
+trailWidth: 1
 trailLength: 12
 autoFindTarget: false
 homingDelay: 0
 homingPower: 2
 circleTarget: false
 faceTarget: true
-loopSound: none
-deathSound: none
-trailColor: 18181a
+loopSound: loopMissileTrail
+deathSound: explosionMissile
+trailColor: eac4a7
 aimDst: 4
 drawCell: false
 engineSize: 0
@@ -28,7 +29,7 @@ abilities: [
     type: MoveEffectAbility
     interval: 2.5
     effect: {
-      offsetY: -3
+      offsetX: -6
       type: ParticleEffect
       particles: 24
       length: 2
@@ -39,7 +40,7 @@ abilities: [
       strokeTo: 0.4
       colorFrom: e5ac81
       colorTo: 553c2a
-      cone: 30
+      
     }
     rotateEffect: true
   }
