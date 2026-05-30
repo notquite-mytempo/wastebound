@@ -30,21 +30,47 @@ hidden: true
 abilities: [
   {
     type: MoveEffectAbility
-    interval: 2.5
-    effect: {
+    interval: 1
+    effect:
+    [{
       offsetX: -8
       type: ParticleEffect
-      particles: 24
-      length: 2
-      sizeFrom: 6
-      sizeTo: 1
-      baseLength: 1.6
-      strokeFrom: 4.2
-      strokeTo: 0.4
+      particles: 2
+      lifetime:90
+      length: 4
+      sizeFrom: 2
+      sizeTo: 6
+      layer:100.1
       colorFrom: e5ac81
-      colorTo: 553c2a
-      
+      colorTo: 553c2a00
     }
+    {
+      offsetX: -8
+      startDelay:10
+      type: ParticleEffect
+      particles: 3
+      lifetime:80
+      length: 26
+      sizeFrom: 2
+      sizeTo: 4
+      layer:100.1
+      colorFrom: e5ac81
+      colorTo: 553c2a00
+    }
+    {
+        offsetX: -8
+        type: ParticleEffect
+        particles: 3
+        lifetime:70
+        sizeChangeStart:50
+        length: 25
+        sizeFrom: 2
+        sizeTo: 1
+        layer:100.3
+        colorFrom: e5ac81
+        colorTo: 553c2a00
+    }
+    ]
     rotateEffect: true
   }
 ]
