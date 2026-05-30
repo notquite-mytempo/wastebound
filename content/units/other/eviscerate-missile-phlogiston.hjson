@@ -31,6 +31,8 @@ abilities: [
       type: ParticleEffect
       particles: 24
       length: 2
+      sizeFrom: 8
+      sizeTo: 1
       baseLength: 1.6
       strokeFrom: 4.2
       strokeTo: 0.4
