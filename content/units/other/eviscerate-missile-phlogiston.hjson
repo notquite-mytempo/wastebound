@@ -16,6 +16,8 @@ circleTarget: false
 faceTarget: true
 loopSound: loopMissileTrail
 deathSound: explosionMissile
+deathEffect: scatheExplosion
+deathColor: dea989
 trailColor: eac4a7
 aimDst: 4
 drawCell: false
