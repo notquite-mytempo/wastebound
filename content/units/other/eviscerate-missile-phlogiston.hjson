@@ -64,12 +64,12 @@ bullet:{
     keepVelocity:false
     height: 9
     trailWidth: 1
-    trailLength: 4
+    trailLength: 6
     backColor: 855c4e
     frontColor: efccbf
     trailColor: 855c4e
     lifetime: 35
-    speed: 2.5
+    speed: 4
     drag:0.03
     homingRange:20
     homingPower: 0.02
