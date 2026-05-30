@@ -22,7 +22,8 @@ trailColor: eac4a7
 aimDst: 4
 drawCell: false
 engineSize: 0
-outlines: false
+outlines: true
+outlineColor: 0f1718
 range: 4
 hidden: true
 
