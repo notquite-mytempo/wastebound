@@ -93,7 +93,16 @@ bullet:{
         type: ExplosionBulletType
         splashDamage: 210
         splashDamageRadius: 60
-        hitEffect: hitSquaresColor
+        hitEffect: {
+          type: WaveEffect
+          sizeFrom: 0
+          sizeTo: 60
+          strokeFrom: 8
+          strokeTo: 1
+          colorFrom: eac4a7
+          colorTo: 2c1d142c
+        }
+
         hitColor: 583b5a
         fragRandomSpread:37
         fragBullets:12
