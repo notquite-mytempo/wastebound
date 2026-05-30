@@ -86,7 +86,7 @@ bullet:{
     shake: 1
     bullet: {
         type: ExplosionBulletType
-        splashDamage: 340
+        splashDamage: 210
         splashDamageRadius: 60
         hitEffect: hitSquaresColor
         hitColor: 583b5a
