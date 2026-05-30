@@ -31,11 +31,11 @@ abilities: [
     type: MoveEffectAbility
     interval: 2.5
     effect: {
-      offsetX: -6
+      offsetX: -8
       type: ParticleEffect
       particles: 24
       length: 2
-      sizeFrom: 8
+      sizeFrom: 6
       sizeTo: 1
       baseLength: 1.6
       strokeFrom: 4.2
