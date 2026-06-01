@@ -8,7 +8,7 @@ minAlpha: 0.025
 maxAlpha: 0.15
 sizeMin: 100
 sizeMax: 450
-density: 1400
+density: 4200
 sound: none
 noiseLayers: 2
 name: Fog (Vastis)
