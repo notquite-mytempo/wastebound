@@ -100,11 +100,11 @@ bullet:{
     backColor: 855c4e
     frontColor: efccbf
     trailColor: 855c4e
-    lifetime: 35
-    speed: 4
+    lifetime: 90
+    speed: 2
     drag:0.03
-    homingRange:20
-    homingPower: 0.02
+    homingRange:32
+    homingPower: 0.5
     pierce: true
     pierceCap: 2
     pierceBuilding: true
