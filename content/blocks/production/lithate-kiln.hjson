@@ -22,15 +22,11 @@ category: crafting
 requirements: [
   indium/90
   cement/70
-  coke/60
-  osmium/40
 ]
 research: coke-furnace
 researchCost:[
-  indium/4000
-  cement/3000
-  coke/500
-  osmium/200
+  indium/800
+  cement/600
 ]
 ambientSound: loopSmelter
 ambientSoundVolume: 0.08
