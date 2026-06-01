@@ -12,7 +12,20 @@ loopSound: none
 chargeEffect: lancerLaserCharge
 chargeSound: chargeLancer
 shootSound: shootRetusa
-shootEffect: colorSpark
+shootEffect:{
+        type: ParticleEffect
+        lifetime: 30
+        particles: 1
+        layer: 100.0
+        cone: 10
+        sizeFrom: 2
+        sizeTo: 0
+        length: 8
+        randLength:false
+
+        colorFrom: 638a7c
+        colorTo: 202525
+      }
 shootColor:7c7c7c39
 research: dopple
 range: 90
