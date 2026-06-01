@@ -194,6 +194,21 @@ bullet:{
             shrinkY: 0
             pierce: false
             lifetime: 20
+            fragLifeMin: 1
+            fragLifeMax: 1
+            fragVelocityMin: 1
+            fragVelocityMax: 1
+            fragRandomSpread: 0
+            fragBullets: 4
+            fragBullet: {
+        type: LightningBulletType
+        lightningLength: 12
+        damage: 6
+        pierce: false
+        buildingDamageMultiplier: 0.3
+        pierceBuilding: false
+        lightningColor: f8caa3
+      }
         }
     }
   } 
