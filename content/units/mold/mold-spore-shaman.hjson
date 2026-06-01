@@ -18,7 +18,7 @@ abilities:[
       angle: 65
       width: 6
       chanceDeflect: 0.1
-      color: 49494990
+      color: 494949
     }
     {
       type: ShieldRegenFieldAbility
