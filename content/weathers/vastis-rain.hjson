@@ -2,8 +2,8 @@ type: RainWeather
 color: 5d7a63
 xspeed: 1
 yspeed: 2
-minAlpha: 0.02
-maxAlpha: 0.1
+minAlpha: 0.06
+maxAlpha: 0.3
 sizeMin: 8
 sizeMax: 35
 density: 600
