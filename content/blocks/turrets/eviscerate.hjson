@@ -2,6 +2,7 @@ type: ItemTurret
 name: Eviscerate
 description: Fires one massive missile that violently detonates on impact.
 size: 4
+rotateSpeed: 3
 category: turret
 research: {
   parent: refract
@@ -79,8 +80,8 @@ drawer: {
       }
       ]
       }
-      moveY: -1
-      recoilTime: 8
+      moveY: -3
+      recoilTime: 6
       heatProgress: warmup
     }
         {
@@ -99,8 +100,8 @@ drawer: {
       }
       ]
       }
-      moveY: -1
-      recoilTime: 8
+      moveY: -3
+      recoilTime: 6
       heatProgress: warmup
     }
         {
