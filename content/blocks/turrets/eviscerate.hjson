@@ -1,7 +1,7 @@
 type: ItemTurret
 name: Eviscerate
 description: Fires one massive missile that violently detonates on impact.
-size: 5
+size: 4
 category: turret
 research: {
   parent: refract
@@ -58,4 +58,105 @@ ammoTypes:{
     instantDisappear: true
     damage: 0
   }
+}
+drawer: {
+  type: DrawTurret
+  basePrefix: wastebound-
+  parts: [
+    {
+      type: RegionPart
+      suffix: -arm-r
+      mirror: false
+      alternate: false
+      under: false
+  
+      progress:{
+      type: recoil
+      ops:[
+       {
+      op: curve
+      interp: swingOut
+      }
+      ]
+      }
+      moveY: -1
+      recoilTime: 8
+      heatProgress: warmup
+    }
+        {
+      type: RegionPart
+      suffix: -arm-l
+      mirror: false
+      alternate: false
+      under: false
+  
+      progress:{
+      type: recoil
+      ops:[
+       {
+      op: curve
+      interp: swingOut
+      }
+      ]
+      }
+      moveY: -1
+      recoilTime: 8
+      heatProgress: warmup
+    }
+        {
+      type: RegionPart
+      suffix: -wing-r
+      mirror: false
+      under: false
+      progress:{
+      type: warmup
+       ops:[
+       {
+       op: curve
+       interp: sineIn
+       }
+       ]
+       }
+      moveRot: -15
+      moveY: 1
+      moveX: -0.3
+      heatProgress: warmup
+    }
+            {
+      type: RegionPart
+      suffix: -wing-l
+      mirror: false
+      under: false
+      progress:{
+      type: warmup
+       ops:[
+       {
+       op: curve
+       interp: sineIn
+       }
+       ]
+       }
+      moveRot: 15
+      moveY: 1
+      moveX: 0.3
+      heatProgress: warmup
+    }
+                {
+      type: RegionPart
+      suffix: -thing
+      mirror: false
+      under: false
+      progress:{
+      type: warmup
+       ops:[
+       {
+       op: curve
+       interp: sineIn
+       }
+       ]
+       }
+      moveY: -1
+      heatProgress: warmup
+    }
+  ]
 }
