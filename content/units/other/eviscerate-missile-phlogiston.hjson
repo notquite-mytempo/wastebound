@@ -152,7 +152,7 @@ bullet:{
             fragLifeMax: 1
             fragVelocityMin: 1
             fragVelocityMax: 1
-            fragRandomSpread: 15
+            fragRandomSpread: 360
             fragBullets: 3
             fragBullet: {
         type: LightningBulletType
