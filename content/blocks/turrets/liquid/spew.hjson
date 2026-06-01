@@ -17,10 +17,11 @@ shootEffect:{
         lifetime: 30
         particles: 1
         layer: 100.0
-        cone: 10
-        sizeFrom: 2
+        cone: 15
+        sizeFrom: 5
         sizeTo: 0
-        length: 8
+        length: 24
+        baseLength: 5
         randLength:false
 
         colorFrom: 638a7c
