@@ -21,7 +21,7 @@ shootEffect:{
         sizeFrom: 5
         sizeTo: 0
         length: 24
-        baseLength: 5
+        baseLength: 0
         randLength:false
 
         colorFrom: 638a7c
