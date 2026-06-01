@@ -87,11 +87,12 @@ alwaysShooting: true
 shoot:{
     type: ShootSpread
     firstShotDelay: 15
-    shots: 4
+    shots: 2
     spread: 20
 }
 velocityRnd:0.7
 bullet:{
+    damage: 5
     width: 5
     keepVelocity:false
     height: 9
@@ -112,6 +113,44 @@ bullet:{
     shootSmoke:none
 }
 }
+
+reload: 6
+x:0
+y:0
+mirror:false
+baseRotation:180
+rotate:false
+alwaysShooting: true
+shoot:{
+    type: ShootSpread
+    firstShotDelay: 15
+    shots: 2
+    spread: 10
+}
+velocityRnd:0.7
+bullet:{
+    damage: 20
+    width: 6
+    keepVelocity:false
+    height: 13
+    trailWidth: 1.2
+    trailLength: 14
+    backColor: 855c4e
+    frontColor: efccbf
+    trailColor: 855c4e
+    lifetime: 10
+    speed: 4
+    drag:0.03
+    homingRange:32
+    homingPower: 0.8
+    pierce: true
+    pierceCap: 4
+    pierceBuilding: true
+    shootEffect:none
+    shootSmoke:none
+}
+}
+
 {
     reload: 1
     shootOnDeath: true
