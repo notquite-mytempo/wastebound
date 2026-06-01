@@ -6,7 +6,7 @@ missileAccelTime:12
 useUnitCap: false
 physics: false
 lifetime:73
-rotateSpeed: 0.2
+rotateSpeed: 0.8
 trailWidth: 1
 trailLength: 12
 autoFindTarget: false
@@ -135,9 +135,9 @@ bullet:{
     height: 13
     trailWidth: 1.2
     trailLength: 14
-    backColor: 855c4e
-    frontColor: efccbf
-    trailColor: 855c4e
+    backColor: c38b6e
+    frontColor: efd1ac
+    trailColor: c38b6e
     lifetime: 60
     speed: 4
     drag:0.03
