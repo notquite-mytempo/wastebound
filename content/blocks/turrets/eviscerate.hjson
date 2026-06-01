@@ -34,6 +34,7 @@ targetAir: false
 targetGround: true
 reload: 180
 range: 340
+shootY: 2
 predictTarget: false
 intervalBullets: 2
 bulletInterval: 6
