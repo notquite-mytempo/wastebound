@@ -1,0 +1,19 @@
+type: MassDriver
+name: Item Blaster
+description: Launches bunches of items over medium distances to another Item Blaster in range. Requires power.
+size: 2
+squareSprite: false
+itemCapacity: 30
+reload: 130
+range: 160
+consumes: {
+  power: 1.5
+}
+category: distribution
+research: indium-duct
+requirements: [
+  indium/90
+  //cadmium/80
+  cement/60
+  lithate/40
+]
